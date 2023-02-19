@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mojang_banner_pattern",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"EScroll_goldProspector\", Enchantments:[{}],HideFlags:255}"
+            },
+            {
+              "function": "set_name",
+               "name": {"text": "Enchanting Scroll", "color": "light_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                [{"text": "ULTIMATE ", "color": "light_purple", "italic": false, "bold": true}, {"text": "Enchantment: Gold Prospector", "bold": false}],
+                [{"text": "Gain a chance to drop ", "color": "gray","italic":false}, {"text":"Refined Ores","color":"yellow"}, " from mining!"],
+                "",
+                [{"text":"Apply to: ","color":"gray","italic":false}],
+                [{"text":"Pickaxes","color":"yellow","italic":false},[{"text":" with ","color":"gray","italic":false}, {"text":"Smelting Touch","color":"blue"}," and ", {"text":"Fortune V","bold":false,"color":"blue"}]]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

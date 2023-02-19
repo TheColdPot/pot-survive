@@ -1,0 +1,16 @@
+{
+  "parent": "pot:recipes/root",
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "enderman"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:advanced_crafting/recipe_book/recipe_give/enderman_armor"
+  }
+}

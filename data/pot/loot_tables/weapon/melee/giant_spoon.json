@@ -1,0 +1,51 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_shovel",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:4,potAttr:\"giantSpoon\"}"
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "knockback": 5
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "slot": "mainhand",
+                  "attribute": "generic.movement_speed",
+                  "name": "movement_speed",
+                  "operation": "multiply_total",
+                  "amount": -0.3
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Giant's Spoon", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                {"text": "Bonus: Fill Up", "color": "dark_purple", "italic": false},
+                [{"text": "Gain ", "color": "gray", "italic": false},{"text":"1 food level","color":"yellow"},"every 2.75s,"],
+                {"text":"making sure you're full.", "color": "gray", "italic": false}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

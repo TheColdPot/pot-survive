@@ -1,0 +1,48 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 2,
+      "rolls": 5, 
+      "entries": [
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/growth", "weight": 20 },
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/efficiency", "weight": 20 },
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/sharpness", "weight": 20 },
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/power", "weight": 20},
+        {
+          "type": "item",
+          "name": "experience_bottle",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 36
+        },
+        {
+          "type": "item",
+          "name": "paper",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 40
+              }
+            }
+          ],
+          "weight": 32
+        },
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/sharpness_hyper", "weight": 3},
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/growth_hyper", "weight": 3},
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/sharpness_ultra_1", "weight": 2},
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/sharpness_ultra_2", "weight": 1},
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/growth_ultra_1", "weight": 1},
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/growth_ultra_2", "weight": 1}
+      ] 
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "netherite_hoe",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4,potAttr:\"netherScythe\"}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 15
+                },
+                {
+                  "name": "attack_damage2",
+                  "attribute": "generic.attack_damage",
+                  "operation": "multiply_total",
+                  "slot": "mainhand",
+                  "amount": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "??? Scythe", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                {"text": "Ability: Crazy Reaping", "color": "gold", "italic": false},
+                [{"text": "Gain ", "color": "gray", "italic": false},{"text":"4❤","color":"red"}," to ", {"text":"nearby players","color":"yellow"}],
+                [{"text": "from killing.", "color": "gray", "italic": false}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

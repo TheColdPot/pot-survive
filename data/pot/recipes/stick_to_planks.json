@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:oak_planks",
+    "count": 1
+  }
+}

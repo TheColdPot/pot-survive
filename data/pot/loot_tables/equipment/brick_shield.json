@@ -1,0 +1,49 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "shield",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{BlockEntityTag:{Patterns:[{Pattern:\"b\",Color:8},{Pattern:\"bri\",Color:15}]},HideFlags:32}"
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "unbreaking": 5
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "max_health",
+                  "attribute": "generic.max_health",
+                  "operation": "multiply_total",
+                  "slot": "offhand",
+                  "amount": 0.2
+                },
+                {
+                  "name": "armor_toughness",
+                  "attribute": "generic.armor_toughness",
+                  "operation": "addition",
+                  "slot": "offhand",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Brick Shield", "color": "dark_purple", "italic": false}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

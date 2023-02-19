@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=bow_string] at @s if entity @e[tag=tp_target,distance=..100] run function pot:boss/proxima/effects/bow/entity_tp

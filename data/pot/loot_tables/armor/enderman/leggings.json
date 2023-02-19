@@ -1,0 +1,47 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"enderman_l\",display:{color:12799167},Unbreakable:1b,HideFlags:68}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Enderman Leggings", "italic": false, "color": "blue"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                
+                "",
+                {"text": "Full Set Bonus: End the End", "color": "blue", "italic": false},
+                [{"text": "Some of your stats are ", "color": "gray", "italic": false},{"text":"doubled","color":"green"}],
+                {"text": "while in the end!", "color": "gray", "italic": false}
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "operation": "addition",
+                  "amount": 4,
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

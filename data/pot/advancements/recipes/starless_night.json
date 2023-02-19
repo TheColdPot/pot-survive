@@ -1,0 +1,20 @@
+{
+  "parent": "pot:recipes/root",
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:obsidian"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:advanced_crafting/recipe_book/recipe_give/starless_night"
+  }
+}

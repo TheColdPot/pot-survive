@@ -1,0 +1,1 @@
+execute in pot:proxima_dimension run function pot:boss/proxima/place_crystals

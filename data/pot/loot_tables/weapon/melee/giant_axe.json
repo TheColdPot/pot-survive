@@ -1,0 +1,43 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_axe",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 20
+                },
+                {
+                  "name": "attack_speed",
+                  "attribute": "generic.attack_speed",
+                  "operation": "multiply_total",
+                  "slot": "mainhand",
+                  "amount": -0.8
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Giant's Axe", "color": "dark_purple", "italic": false}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

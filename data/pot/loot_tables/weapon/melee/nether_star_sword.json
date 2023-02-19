@@ -1,0 +1,45 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4,potAttr:\"netherStarSword\"}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 20
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Nether Star Sword", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                {"text": "Ability: Withering", "color": "gold", "italic": false},
+                [{"text": "As you attack, the mobs in ", "color": "gray", "italic": false},{"text":"7 blocks","color":"green"}],
+                [{"text":"will get ", "color": "gray", "italic": false},{"text":"Wither III","color":"red"}," debuff."]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

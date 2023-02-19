@@ -1,0 +1,1 @@
+loot give @s loot pot:centauri_sword

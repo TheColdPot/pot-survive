@@ -1,0 +1,43 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "netherite_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 53.5
+                },
+                {
+                  "name": "attack_speed",
+                  "attribute": "generic.attack_speed",
+                  "operation": "multiply_base",
+                  "slot": "mainhand",
+                  "amount": -0.1
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Sword of the Deep Dark", "color": "light_purple", "italic": false}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

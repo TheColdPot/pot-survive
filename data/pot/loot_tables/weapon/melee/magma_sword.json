@@ -1,0 +1,51 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "golden_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:4}"
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "fire_aspect": 2
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 6
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Magma Sword", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                {"text": "Bonus: Into Fire", "color": "dark_purple", "italic": false},
+                [{"text": "Gain ", "color": "gray", "italic": false},{"text":"Fire Resistance","color":"yellow"},","],
+                {"text":"while holding this sword.", "color": "gray", "italic": false}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

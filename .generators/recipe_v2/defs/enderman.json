@@ -1,0 +1,49 @@
+{
+  "priority": 0,
+  "set_id": "enderman",
+  "recipe_book": {
+    "type": "armor",
+    "requires": "enderman_armor",
+    "set": true
+  },
+  "template": {
+    "path": "armor/{set_id}/{pattern}",
+    "book_path": "{set_id}_sets/{pattern}",
+    "id": "{set_id}_{pattern}",
+    "result_loot": "pot:armor/{set_id}/{pattern}"
+  },
+  "key": {
+    "/": {
+      "id": "minecraft:end_stone",
+      "count": 8,
+      "loot": null
+    },
+    "o": {
+      "id": "minecraft:ender_eye",
+      "count": 1,
+      "loot": null
+    }
+  },
+  "set_pattern": {
+    "helmet": [
+      "/o/",
+      "/ /",
+      "   "
+    ],
+    "chestplate": [
+      "/ /",
+      "/o/",
+      "///"
+    ],
+    "leggings": [
+      "/o/",
+      "/ /",
+      "/ /"
+    ],
+    "boots": [
+      "   ",
+      "o o",
+      "/ /"
+    ]
+  }
+}

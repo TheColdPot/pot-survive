@@ -1,0 +1,37 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mojang_banner_pattern",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"EScroll_bloody\", Enchantments:[{}],HideFlags:255}"
+            },
+            {
+              "function": "set_name",
+               "name": {"text": "Enchanting Scroll", "color": "light_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                [{"text": "ULTIMATE ", "color": "light_purple", "italic": false, "bold": true}, {"text": "Enchantment: Bloody", "bold": false}],
+                [{"text": "+60% ", "color": "red", "italic": false},{"translate": "attribute.name.generic.attack_damage", "color": "gray"}],
+                [{"text": "+10 ", "color": "red", "italic": false},[{"translate": "attribute.name.generic.attack_damage", "color": "gray"}, " (Arthropods)"]],
+                [{"text": "+10 ", "color": "red", "italic": false},[{"translate": "attribute.name.generic.attack_damage", "color": "gray"}, " (Undead)"]],
+                "",
+                [{"text":"Apply to: ","color":"gray","italic":false}],
+                [{"text":"Melee weapons","color":"yellow","italic":false},{"text":" with ","color":"gray","italic":false}, {"text":"Sharpness XII","bold":false,"color":"gold"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

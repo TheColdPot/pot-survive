@@ -1,0 +1,47 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potGear:\"helmet\",potAttr:\"enderman_h\",SkullOwner:{Id:[I;1,1,4,5],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODIwMGZmNThkN2Q1NDk4Y2UzMGIxMWE4MzYwZTM4ZGI5NzE4OTZjNzRkODA1YzFjMDBmMjA3YWM3ODQ3NjFlZiJ9fX0=\"}]}},Unbreakable:1b,HideFlags:4}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Enderman Helmet", "italic": false, "color": "blue"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                
+                "",
+                {"text": "Full Set Bonus: End the End", "color": "blue", "italic": false},
+                [{"text": "Some of your stats are ", "color": "gray", "italic": false},{"text":"doubled","color":"green"}],
+                {"text": "while in the end!", "color": "gray", "italic": false}
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "operation": "addition",
+                  "amount": 2,
+                  "slot": "head"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

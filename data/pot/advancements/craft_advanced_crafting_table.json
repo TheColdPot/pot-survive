@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "recipe_unlocked",
+      "conditions": {
+        "recipe": "pot:advanced_crafting_table"
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:advanced_crafting/get_table"
+  }
+}

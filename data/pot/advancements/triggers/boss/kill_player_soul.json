@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[proximaPlayerSoul]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:boss/proxima/die/test_revive"
+  }
+}

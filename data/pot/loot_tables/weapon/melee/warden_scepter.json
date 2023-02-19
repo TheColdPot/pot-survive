@@ -1,0 +1,43 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "echo_shard",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"wardenScepter\", Enchantments:[{}],HideFlags:32}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Warden's Scepter", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {"text": "The scepter stands for the power", "color": "dark_gray", "italic": true},
+                {"text": "that they used to have.", "color": "dark_gray", "italic": true}
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "slot": "mainhand",
+                  "attribute": "generic.attack_damage",
+                  "amount": 10,
+                  "operation": "addition",
+                  "name": "attack_damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

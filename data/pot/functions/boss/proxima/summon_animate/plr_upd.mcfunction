@@ -1,0 +1,16 @@
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty 24 ~-1 14
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty 29 ~-1 -1
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty 24 ~-1 -16
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty 9 ~-1 -26
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty -11 ~-1 -26
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty -26 ~-1 -16
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty -31 ~-1 -1
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar_empty -26 ~-1 14
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar0 24 ~ 14
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar1 29 ~ -1
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar2 24 ~ -16
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar3 9 ~ -26
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar4 -11 ~ -26
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar5 -26 ~ -16
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar6 -31 ~ -1
+execute at @e[type=marker,tag=proximaPillarsRiseMarker] run place template pot:boss/proxima/pillar7 -26 ~ 14

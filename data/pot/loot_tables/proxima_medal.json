@@ -1,0 +1,73 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4,potAttr:\"proximaMedal\",SkullOwner:{Id:[I;-1764185938,-348435239,-1162633735,-1782962364],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNmYjZhYjNmMTY1MjgzMjg1YzUxMzA1ZDUwNmUyNDE2ZjQ4MzFmZmZjY2RiYzRlZTMzNmE4MDQzYTQ4N2EwMSJ9fX0=\"}]}}}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 500
+                },
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "multiply_total",
+                  "slot": "mainhand",
+                  "amount": 20
+                },
+                {
+                  "name": "movement_speed",
+                  "attribute": "generic.movement_speed",
+                  "operation": "multiply_total",
+                  "slot": "mainhand",
+                  "amount": 0.2
+                },
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "offhand",
+                  "amount": 400
+                },
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "multiply_total",
+                  "slot": "offhand",
+                  "amount": 10
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {"text": "aa", "color": "red", "italic": false, "obfuscated": true},
+                {"text": " Proxima's Medal ", "obfuscated": false},
+                "aa"
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

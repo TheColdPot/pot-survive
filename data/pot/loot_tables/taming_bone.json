@@ -1,0 +1,45 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "bone",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"tame\", Enchantments:[{}]}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "multiply_total",
+                  "slot": "mainhand",
+                  "amount": -0.9999
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Bone of Taming", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {"text": "Punch monsters with this!", "color": "gray", "italic": false},
+                {"text": "将生物驯化为狗并在5秒后释放闪电", "color": "gray", "italic": false},
+                {"text": "非常不稳定！可能误伤其他实体！", "color": "red", "italic": false},
+                {"text": "Consume on use.", "color": "red", "italic": false}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/efficiency" },
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/sharpness" },
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/power" },
+        { "type": "loot_table", "name": "pot:enchanting_scrolls/smelting_touch" }
+      ]
+    }
+  ]
+}

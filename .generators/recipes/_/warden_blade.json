@@ -1,0 +1,26 @@
+{
+  "type": "weapon",
+  "priority": 0,
+  "path": "warden_blade",
+  "pattern": [
+    " O ",
+    " O ",
+    " | "
+  ],
+  "keys": {
+    "|": {
+      "id": "minecraft:echo_shard",
+      "count": 1,
+      "nbt": "{potAttr:\"wardenScepter\"}"
+    },
+    "O": {
+      "id": "minecraft:player_head",
+      "count": 6,
+      "nbt": "{potAttr:\"wardenHeart\"}"
+    }
+  },
+  "result": {
+    "loot": "pot:warden_blade",
+    "id": "warden_blade"
+  }
+}

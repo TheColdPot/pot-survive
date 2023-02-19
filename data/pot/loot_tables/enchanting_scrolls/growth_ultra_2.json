@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mojang_banner_pattern",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"EScroll_growthUltra2\", Enchantments:[{}],HideFlags:255}"
+            },
+            {
+              "function": "set_name",
+               "name": {"text": "Enchanting Scroll", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                [{"text": "ULTRA ", "color": "gold", "italic": false, "bold": true}, {"text": "Enchantment: Growth V", "bold": false}],
+                [{"text": "+10 ", "color": "red", "italic": false},{"translate": "attribute.name.generic.max_health", "color": "gray"}],
+                "",
+                [{"text":"Apply to: ","color":"gray","italic":false}],
+                [{"text":"Armors","color":"yellow","italic":false},{"text":" with ","color":"gray","italic":false}, {"text":"Growth IV","bold":false,"color":"gold"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

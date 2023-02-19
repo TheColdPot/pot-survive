@@ -1,0 +1,56 @@
+{
+  "priority": 0,
+  "set_id": "warden",
+  "recipe_book": {
+    "type": "armor",
+    "requires": "warden_gear",
+    "set": true
+  },
+  "template": {
+    "path": "armor/{set_id}/{pattern}",
+    "book_path": "{set_id}_sets/{pattern}",
+    "id": "{set_id}_{pattern}",
+    "result_loot": "pot:armor/{set_id}/{pattern}"
+  },
+  "key": {
+    "O": {
+      "id": "minecraft:diamond",
+      "count": 8,
+      "loot": null
+    },
+    "i": {
+      "id": "minecraft:disc_fragment_5",
+      "count": 2,
+      "nbt": "{potAttr:\"wardenArtifact\"}",
+      "loot": "pot:warden_artifact"
+    },
+    "I": {
+      "id": "minecraft:player_head",
+      "count": 1,
+      "nbt": "{potAttr:\"wardenHeart\"}",
+      "loot": "pot:warden_heart"
+    }
+  },
+  "set_pattern": {
+    "helmet": [
+      "OIO",
+      "i i",
+      "   "
+    ],
+    "chestplate": [
+      "O O",
+      "iIi",
+      "iii"
+    ],
+    "leggings": [
+      "OIO",
+      "i i",
+      "i i"
+    ],
+    "boots": [
+      "   ",
+      "O O",
+      "iIi"
+    ]
+  }
+}

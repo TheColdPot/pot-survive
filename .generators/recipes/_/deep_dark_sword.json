@@ -1,0 +1,35 @@
+{
+  "type": "weapon",
+  "priority": 0,
+  "path": "deep_dark_sword",
+  "pattern": [
+    "|o|",
+    "|/|",
+    "|.|"
+  ],
+  "keys": {
+    "|": {
+      "id": "minecraft:echo_shard",
+      "count": 2,
+      "nbt": "{potAttr:\"wardenScepter\"}"
+    },
+    "/": {
+      "id": "minecraft:diamond_sword",
+      "count": 1,
+      "nbt": "{potAttr:\"wardenBlade\"}"
+    },
+    "o": {
+      "id": "minecraft:player_head",
+      "count": 32,
+      "nbt": "{potAttr:\"wardenHeart\"}"
+    },
+    ".": {
+      "id": "minecraft:sculk_catalyst",
+      "count": 24
+    }
+  },
+  "result": {
+    "loot": "pot:deep_dark_sword",
+    "id": "deep_dark_sword"
+  }
+}

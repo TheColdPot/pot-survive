@@ -1,0 +1,68 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_chestplate",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"warden_c\",display:{color:2113352},Unbreakable:1b,HideFlags:68}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Warden's Chestplate", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                "",
+                {"text": "Full Set Bonus: Brute Force", "color": "gold", "italic": false},
+                [{"text": "Halves your speed but grants ", "color": "gray", "italic": false}],
+                [{"text": "+20% ", "color": "red", "italic": false},{"text": "base weapon damage for", "color": "gray", "italic": false}],
+                [{"text": "every ", "color": "gray", "italic": false},{"text": "25 ", "color": "green", "italic": false},{"text": "speed", "color": "gray", "italic": false}]
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attack_damage",
+                  "operation": "multiply_total",
+                  "amount": 0.05,
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "operation": "addition",
+                  "amount": 7,
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armor_toughness",
+                  "operation": "addition",
+                  "amount": 4,
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "generic.knockback_resistance",
+                  "name": "armor_toughness",
+                  "operation": "addition",
+                  "amount": 0.2,
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

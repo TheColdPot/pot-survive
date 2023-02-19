@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mojang_banner_pattern",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"EScroll_fortune\", Enchantments:[{}],HideFlags:255}"
+            },
+            {
+              "function": "set_name",
+               "name": {"text": "Enchanting Scroll", "color": "blue", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                [{"text": "Enchantment:", "color": "blue", "italic": false}, " Fortune I-V"],
+                [{"text": "Get more drops!", "color": "gray","italic":false}],
+                "",
+                [{"text":"Apply to: ","color":"gray","italic":false}],
+                [{"text":"Tools","color":"yellow","italic":false}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

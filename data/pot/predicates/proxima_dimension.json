@@ -1,0 +1,9 @@
+{
+  "condition": "entity_properties",
+  "predicate": {
+    "location": {
+      "dimension": "pot:proxima_dimension"
+    }
+  },
+  "entity": "this"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "armor",
+  "priority": 0,
+  "path": "armor/crazy_helmet",
+  "pattern": [
+    "iii",
+    "i i",
+    "   "
+  ],
+  "keys": {
+    "i": {
+      "id": "minecraft:gold_block",
+      "count": 64,
+      "nbt": ""
+    }
+  },
+  "result": {
+    "loot": "pot:crazy_helmet",
+    "id": "crazy_helmet"
+  }
+}

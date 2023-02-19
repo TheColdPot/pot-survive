@@ -1,0 +1,50 @@
+{
+  "type": "set",
+  "helmet": [
+    [false, "diamond", 8],
+    [true, "pot:warden_heart", 1],
+    [false, "diamond", 8],
+    [true, "pot:warden_artifact", 2],
+    null,
+    [true, "pot:warden_artifact", 2],
+    null,
+    null,
+    null
+  ],
+  "chestplate": [
+    [false, "diamond", 8],
+    null,
+    [false, "diamond", 8],
+    [true, "pot:warden_artifact", 2],
+    [true, "pot:warden_heart", 1],
+    [true, "pot:warden_artifact", 2],
+    [true, "pot:warden_artifact", 2],
+    [true, "pot:warden_artifact", 2],
+    [true, "pot:warden_artifact", 2]
+  ],
+  "leggings": [
+    [false, "diamond", 8],
+    [true, "pot:warden_heart", 1],
+    [false, "diamond", 8],
+    [true, "pot:warden_artifact", 2],
+    null,
+    [true, "pot:warden_artifact", 2],
+    [true, "pot:warden_artifact", 2],
+    null,
+    [true, "pot:warden_artifact", 2]
+  ],
+  "boots": [
+    null,
+    null,
+    null,
+    [false, "diamond", 8],
+    null,
+    [false, "diamond", 8],
+    [true, "pot:warden_artifact", 2],
+    [true, "pot:warden_heart", 1],
+    [true, "pot:warden_artifact", 2]
+  ],
+  "advancement": "warden_gear",
+  "path": "warden_sets",
+  "result": "armor/warden"
+}

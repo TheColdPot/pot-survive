@@ -1,0 +1,36 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "bow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:4,potAttr:\"boneBow\"}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "slot": "mainhand",
+                  "attribute": "generic.attack_damage",
+                  "name": "attack_damage",
+                  "operation": "addition",
+                  "amount": 4
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Bone Bow", "color": "green", "italic": false}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

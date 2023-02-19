@@ -1,0 +1,42 @@
+{
+  "type": "set",
+  "helmet": {
+    "refer": "guard_helmet"
+  },
+  "chestplate": [
+    [false, "iron_ingot", 2],
+    null,
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2]
+  ],
+  "leggings": [
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    null,
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    null,
+    [false, "iron_ingot", 2]
+  ],
+  "boots": [
+    null,
+    null,
+    null,
+    [false, "iron_ingot", 2],
+    null,
+    [false, "iron_ingot", 2],
+    [false, "iron_ingot", 2],
+    null,
+    [false, "iron_ingot", 2]
+  ],
+  "advancement": "guard_set",
+  "path": "guard_sets",
+  "result": "armor/guard"
+}

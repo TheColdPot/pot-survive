@@ -1,0 +1,39 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_boots",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"swimsuite_b\",display:{color:5940398},HideFlags:68}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Swimsuite Shoes", "italic": false, "color": "green"}
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "operation": "addition",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

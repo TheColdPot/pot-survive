@@ -1,0 +1,42 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_pickaxe",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:4,potAttr:\"giantPickaxe\"}"
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "efficiency": 6
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "slot": "mainhand",
+                  "attribute": "generic.attack_damage",
+                  "name": "attack_damage",
+                  "operation": "addition",
+                  "amount": 7
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Giant's Pickaxe", "color": "dark_purple", "italic": false}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

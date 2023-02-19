@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " I ",
+    "IOI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "tag": "logs"
+    },
+    "O": {
+      "item": "crafting_table"
+    }
+  },
+  "result": {
+      "item": "knowledge_book"
+  }
+}

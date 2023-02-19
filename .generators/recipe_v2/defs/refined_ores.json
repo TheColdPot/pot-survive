@@ -1,0 +1,54 @@
+{
+  "priority": 0,
+  "set_id": "refined_ores",
+  "template": {
+    "path": "ingredients/{set_id}/{pattern}",
+    "book_path": "{set_id}/{pattern}",
+    "id": "{set_id}_{pattern}",
+    "result_loot": "pot:{set_id}/refined_{pattern}"
+  },
+  "key": {
+    "d": {
+      "id": "minecraft:diamond",
+      "count": 9,
+      "loot": null
+    },
+    "g": {
+      "id": "minecraft:gold_ingot",
+      "count": 9,
+      "loot": null
+    },
+    "i": {
+      "id": "minecraft:iron_ingot",
+      "count": 9,
+      "loot": null
+    },
+    "e": {
+      "id": "minecraft:emerald",
+      "count": 9,
+      "loot": null
+    }
+  },
+  "set_pattern": {
+    "iron": [
+      "iii",
+      "iii",
+      "iii"
+    ],
+    "diamond": [
+      "ddd",
+      "ddd",
+      "ddd"
+    ],
+    "gold": [
+      "ggg",
+      "ggg",
+      "ggg"
+    ],
+    "emerald": [
+      "eee",
+      "eee",
+      "eee"
+    ]
+  }
+}

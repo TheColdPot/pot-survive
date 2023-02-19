@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "pot:warden_artifact",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": -2,
+                "max": 2
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "pot:warden_heart",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "random_chance_with_looting",
+              "chance": 0.08,
+              "looting_multiplier": 0.03
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "helmets": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "id": "minecraft:player_head",
+          "nbt": "{potGear:\"helmet\"}"
+        }
+      }
+    },
+    "specialHeads": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "id": "minecraft:player_head",
+          "nbt": "{specialHead:1b}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["helmets", "specialHeads"]
+  ],
+  "rewards": {
+    "function": "pot:place_refuse/test"
+  }
+}

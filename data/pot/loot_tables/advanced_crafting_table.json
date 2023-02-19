@@ -1,0 +1,30 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "barrel",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"advancedCrafting\", Enchantments:[{}], BlockEntityTag:{Lock:'advancedCrafting'}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "高级工作台", "color": "green", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {"text": "进入一个新的合成世界！", "color": "gray", "italic": false}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

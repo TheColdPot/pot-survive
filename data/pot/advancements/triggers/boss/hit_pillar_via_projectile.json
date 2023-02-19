@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[proximaPillarDamageReciever]}"
+        },
+        "damage": {
+          "type": {
+            "is_projectile": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:boss/proxima/hit_pillar/try_projectille"
+  }
+}

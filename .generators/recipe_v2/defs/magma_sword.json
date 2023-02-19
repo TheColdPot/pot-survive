@@ -1,0 +1,32 @@
+{
+  "priority": 0,
+  "path": "magma_sword",
+  "id": "magma_sword",
+  "recipe_book": {
+    "type": "weapon",
+    "requires": "magma_gear",
+    "set": true,
+    "path": "magma_sword"
+  },
+  "pattern": [
+    " O ",
+    " O ",
+    " | "
+  ],
+  "key": {
+    "|": {
+      "id": "minecraft:blaze_rod",
+      "count": 1
+    },
+    "O": {
+      "id": "minecraft:blaze_powder",
+      "count": "2",
+      "nbt": "{potAttr:\"magmaDust\"}",
+      "loot": "pot:magma_dust"
+    }
+  },
+  "result": {
+    "loot": "pot:weapon/melee/magma_sword",
+    "id": "magma_sword"
+  }
+}

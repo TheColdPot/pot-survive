@@ -1,0 +1,10 @@
+
+summon marker ~ ~ ~ {Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilMarker]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper0]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper1]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper2]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper3]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper4]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper5]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper6]}
+summon creeper ~ ~ ~ {Team:"proximaRelated",DeathLootTable:"empty",Invulnerable:1b,NoAI:1b,powered:1b,ActiveEffects:[{Id:14,Duration:1145141919,ShowParticles:0b}],Tags:[proximaFx,proximaPowerVeil,proximaPowerVeilCreeper,proximaPowerVeilCreeper7]}

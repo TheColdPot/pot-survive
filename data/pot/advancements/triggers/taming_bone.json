@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{SelectedItem:{id:\"minecraft:bone\",tag:{potAttr:\"tame\"}}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:tame/punch"
+  }
+}

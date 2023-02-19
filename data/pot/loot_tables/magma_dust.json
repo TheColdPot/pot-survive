@@ -1,0 +1,30 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "blaze_powder",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"magmaDust\", Enchantments:[{}],HideFlags:32}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Pure Magma Dust", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {"text": "Dance with fire!", "color": "dark_gray", "italic": true}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

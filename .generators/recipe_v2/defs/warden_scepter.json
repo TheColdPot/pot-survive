@@ -1,0 +1,36 @@
+{
+  "path": "warden_scepter",
+  "priority": 0,
+  "id": "warden_scepter",
+  "recipe_book": {
+    "type": "weapon",
+    "requires": "warden_gear",
+    "set": true,
+    "path": "warden_scepter"
+  },
+
+  "pattern": [
+    ".O.",
+    ".|.",
+    ".O."
+  ],
+  "key": {
+    ".": {
+      "id": "minecraft:disc_fragment_5",
+      "count": 8,
+      "nbt": "{potAttr:\"wardenArtifact\"}",
+      "loot": "pot:warden_artifact"
+    },
+    "|": {
+      "id": "minecraft:amethyst_shard",
+      "count" : 64
+    },
+    "O": {
+      "id": "minecraft:diamond",
+      "count": 16
+    }
+  },
+  "result": {
+    "loot": "pot:weapon/melee/warden_scepter"
+  }
+}

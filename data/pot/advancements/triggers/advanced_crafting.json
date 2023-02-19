@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "placed_block",
+      "conditions": {
+        "item": {
+          "nbt": "{potAttr:\"advancedCrafting\"}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:advanced_crafting/place"
+  }
+}

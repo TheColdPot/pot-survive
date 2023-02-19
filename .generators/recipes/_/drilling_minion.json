@@ -1,0 +1,26 @@
+{
+  "type": "misc",
+  "priority": 0,
+  "path": "auto_miner",
+  "pattern": [
+    "...",
+    "./.",
+    "..."
+  ],
+  "keys": {
+    ".": {
+      "id": "minecraft:iron_ingot",
+      "count": 10,
+      "nbt": ""
+    },
+    "/": {
+      "id": "minecraft:iron_pickaxe",
+      "count": 1,
+      "nbt": ""
+    }
+  },
+  "result": {
+    "loot": "pot:auto_miner",
+    "id": "auto_miner"
+  }
+}

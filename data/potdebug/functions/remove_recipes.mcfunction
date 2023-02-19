@@ -1,0 +1,1 @@
+advancement revoke @s from pot:recipes/root

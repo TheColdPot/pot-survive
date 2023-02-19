@@ -1,0 +1,1 @@
+execute in pot:proxima_dimension run summon marker 0 0 0 {Tags:[proximaFx,proximaPillarsRiseMarker]}

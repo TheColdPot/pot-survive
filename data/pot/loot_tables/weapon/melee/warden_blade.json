@@ -1,0 +1,41 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "diamond_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4,potAttr:\"wardenBlade\"}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 24
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Warden's Blade", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

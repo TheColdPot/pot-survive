@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "impossible",
+      "conditions": {
+        "to": "pot:final_boss"
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:boss/proxima/enter"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "golden_axe",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"enchantaxe\"}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Enchanter's Axe", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {"text": "使用这把斧头破坏的书架将被随机附魔", "italic": false, "color": "gray"}
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0,
+                "max": 0.02
+              }
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "unbreaking": {
+                  "min": 8,
+                  "max": 10
+                },
+                "efficiency": {
+                  "min": 3,
+                  "max": 10
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

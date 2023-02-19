@@ -1,0 +1,29 @@
+{
+  "type": "weapon",
+  "priority": 0,
+  "path": "warden_scepter",
+  "pattern": [
+    ".O.",
+    ".|.",
+    ".O."
+  ],
+  "keys": {
+    ".": {
+      "id": "minecraft:disc_fragment_5",
+      "count": 8,
+      "nbt": "{potAttr:\"wardenArtifact\"}"
+    },
+    "|": {
+      "id": "minecraft:amethyst_shard",
+      "count" : 64
+    },
+    "O": {
+      "id": "minecraft:diamond",
+      "count": 16
+    }
+  },
+  "result": {
+    "loot": "pot:warden_scepter",
+    "id": "warden_scepter"
+  }
+}

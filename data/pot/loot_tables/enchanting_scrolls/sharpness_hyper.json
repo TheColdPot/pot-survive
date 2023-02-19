@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mojang_banner_pattern",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"EScroll_sharpnessHyper\", Enchantments:[{}],HideFlags:255}"
+            },
+            {
+              "function": "set_name",
+               "name": {"text": "Enchanting Scroll", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                [{"text": "HYPER ", "color": "dark_purple", "italic": false, "bold": true}, [{"text": "Enchantment:", "bold": false}, " Sharpness VIII-X"]],
+                [{"text": "+40%-50% ", "color": "red", "italic": false},{"translate": "attribute.name.generic.attack_damage", "color": "gray"}],
+                "",
+                [{"text":"Apply to: ","color":"gray","italic":false}],
+                [{"text":"Melee weapons","color":"yellow","italic":false}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

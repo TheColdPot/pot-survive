@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "loot_table",
+              "name": "pot:rich_dirt",
+              "conditions": [
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "items": [
+                      "wooden_shovel"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "dirt"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

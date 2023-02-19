@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "pot:taming_bone",
+          "conditions": [
+            {
+              "condition": "random_chance_with_looting",
+              "chance": 0.01,
+              "looting_multiplier": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

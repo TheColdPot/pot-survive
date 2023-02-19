@@ -1,0 +1,71 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "wooden_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"sharpness\",lvl:10},{id:\"looting\",lvl:10}],Unbreakable:1b,HideFlags:6,potAttr:\"mostOverpoweredSword\"}"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 9999999999
+                },
+                {
+                  "name": "attack_speed",
+                  "attribute": "generic.attack_speed",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 9999999999
+                },
+                {
+                  "name": "armor",
+                  "attribute": "generic.armor",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 9999999999
+                },
+                {
+                  "name": "armor_toughness",
+                  "attribute": "generic.armor_toughness",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": 9999999999
+                }
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "The Sword from the Centauri", "color": "red", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                {"text": "Centauri.", "color": "dark_gray", "italic": true},
+                {"text": "So far away.", "color": "dark_gray", "italic": true},
+                "",
+                {"translate": "item.modifiers.mainhand", "color": "gray","italic":false},
+                {"text":"+","color":"blue","italic":false,"extra":[[{"text":"Infinity ","color":"light_purple"}], {"translate":"attribute.name.generic.attack_damage"}]},
+                {"text":"+","color":"blue","italic":false,"extra":[[{"text":"Infinity ","color":"light_purple"}], {"translate":"attribute.name.generic.attack_speed"}]},
+                {"text":"+","color":"blue","italic":false,"extra":[[{"text":"Infinity ","color":"light_purple"}], {"translate":"attribute.name.generic.armor"}]},
+                {"text":"+","color":"blue","italic":false,"extra":[[{"text":"Infinity ","color":"light_purple"}], {"translate":"attribute.name.generic.armor_toughness"}]}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

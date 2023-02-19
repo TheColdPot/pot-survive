@@ -1,0 +1,59 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_boots",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potAttr:\"guard_b\",SkullOwner:{},Unbreakable:1b,HideFlags:4}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Guard Boots", "italic": false, "color": "blue"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                "",
+                {"text": "Full Set Bonus: Combo", "color": "blue", "italic": false},
+                [{"text": "Gain ", "color": "gray", "italic": false},{"text": "+20% Attack Speed", "color": "red", "italic": false},"."]
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attack_damage",
+                  "operation": "multiply_total",
+                  "amount": 0.02,
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "operation": "addition",
+                  "amount": 2,
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armor_toughness",
+                  "operation": "addition",
+                  "amount": 2,
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

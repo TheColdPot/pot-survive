@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "pack_format": 12,
+        "description": "Potty Survive! Make the game funnier!\nBy TheColdPot & SaKuraYeager"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "recipes/armor_dye.json"
+            }
+        ]
+    }
+}
