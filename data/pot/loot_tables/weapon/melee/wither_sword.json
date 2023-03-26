@@ -10,23 +10,18 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4,potAttr:\"witherSword\"}"
-            },
-            {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "name": "attack_damage",
-                  "attribute": "generic.attack_damage",
-                  "operation": "addition",
-                  "slot": "mainhand",
-                  "amount": 7.5
-                }
-              ]
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"witherSword\",PotAttr:{id:\"wither_sword\",stat:{damage:300,strength:120}}}"
             },
             {
               "function": "set_name",
               "name": {"text": "Wither Sword", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+300","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+120","color":"red"}]
+              ]
             },
             {
               "function": "set_lore",

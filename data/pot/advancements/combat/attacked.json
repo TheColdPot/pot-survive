@@ -1,0 +1,26 @@
+{
+      "criteria": {
+            "damage": {
+                  "trigger": "minecraft:player_hurt_entity",
+                  "conditions": {
+                        "player": [
+                              {
+                                    "condition": "inverted",
+                                    "term": {
+                                          "condition": "entity_scores",
+                                          "scores": {
+                                                "Cooldown": {
+                                                      "min": 1
+                                                }
+                                          },
+                                          "entity": "this"
+                                    }
+                              }
+                        ]
+                  }
+            }
+      },
+      "rewards":{
+            "function":"pot:combat/attack_speed/test"
+      }
+}

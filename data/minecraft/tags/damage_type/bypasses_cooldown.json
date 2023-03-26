@@ -1,0 +1,8 @@
+{
+    "replace":true,
+    "values":[
+     "minecraft:mob_attack",
+     "minecraft:arrow",
+     "player_attack"
+    ]
+  }

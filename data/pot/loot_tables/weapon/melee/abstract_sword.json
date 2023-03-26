@@ -6,20 +6,20 @@
       "entries": [
         {
           "type": "item",
-          "name": "diamond_sword",
+          "name": "wooden_sword",
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"wardenBlade\",PotAttr:{id:\"warden_blade\",stat:{damage:500}}}"
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"abstract_sword\",stat:{damage:1}}}"
             },
             {
               "function": "set_name",
-              "name": {"text": "Warden's Blade", "color": "gold", "italic": false}
+              "name": {"text": "Abstract Sword", "color": "red", "italic": false}
             },
             {
               "function": "set_lore",
               "lore": [
-                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+500","color":"red"}]
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+1","color":"red"}]
               ]
             }
           ]

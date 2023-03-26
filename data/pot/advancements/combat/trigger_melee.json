@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": false
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:combat/melee_attack"
+  }
+}

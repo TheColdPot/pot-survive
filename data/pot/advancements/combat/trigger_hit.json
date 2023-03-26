@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:combat/player_hurt"
+  }
+}

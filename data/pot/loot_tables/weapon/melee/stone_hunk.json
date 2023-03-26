@@ -1,0 +1,31 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stone_shovel",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,PotAttr:{id:\"stone_hunk\",stat:{damage:100,strength:100}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Stone Hunk", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+100","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+100","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

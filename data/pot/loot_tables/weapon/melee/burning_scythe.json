@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "netherite_hoe",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"netherScythe\",PotAttr:{id:\"nether_scythe\",stat:{damage:200,strength:50}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Burning Scythe", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+200","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+50","color":"red"}],
+                "",
+                {"text": "Ability: Crazy Reaping", "color": "gold", "italic": false},
+                [{"text": "Gain ", "color": "gray", "italic": false},{"text":"4❤","color":"red"}," to ", {"text":"nearby players","color":"yellow"}],
+                [{"text": "from killing.", "color": "gray", "italic": false}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

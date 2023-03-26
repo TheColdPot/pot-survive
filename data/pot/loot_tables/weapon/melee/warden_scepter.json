@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"wardenScepter\", Enchantments:[{}],HideFlags:32}"
+              "tag": "{potAttr:\"wardenScepter\",PotAttr:{id:\"warden_blade\",stat:{damage:80}}, Enchantments:[{}],HideFlags:32}"
             },
             {
               "function": "set_name",
@@ -19,20 +19,14 @@
             {
               "function": "set_lore",
               "lore": [
-                {"text": "The scepter stands for the power", "color": "dark_gray", "italic": true},
-                {"text": "that they used to have.", "color": "dark_gray", "italic": true}
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+80","color":"red"}]
               ]
             },
             {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "slot": "mainhand",
-                  "attribute": "generic.attack_damage",
-                  "amount": 10,
-                  "operation": "addition",
-                  "name": "attack_damage"
-                }
+              "function": "set_lore",
+              "lore": [
+                {"text": "The scepter stands for the power", "color": "dark_gray", "italic": true},
+                {"text": "that they used to have.", "color": "dark_gray", "italic": true}
               ]
             }
           ]

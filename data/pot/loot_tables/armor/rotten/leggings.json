@@ -10,36 +10,18 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"rotten_l\",display:{color:5275676},HideFlags:68}"
+              "tag": "{potAttr:\"rotten_l\",display:{color:5275676},HideFlags:72,Unbreakable:1,PotAttr:{stat:{health:10,defense:15,strength:5}}}"
             },
             {
               "function": "set_name",
               "name": {"text": "Rotten Leggings", "italic": false, "color": "green"}
             },
             {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "generic.attack_damage",
-                  "name": "attack_damage",
-                  "operation": "multiply_total",
-                  "amount": 0.02,
-                  "slot": "legs"
-                },
-                {
-                  "attribute": "generic.armor",
-                  "name": "armor",
-                  "operation": "addition",
-                  "amount": 3,
-                  "slot": "legs"
-                },
-                {
-                  "attribute": "generic.max_health",
-                  "name": "armor_toughness",
-                  "operation": "addition",
-                  "amount": 2,
-                  "slot": "legs"
-                }
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+10","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+15","color":"green"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+5","color":"red"}]
               ]
             }
           ]

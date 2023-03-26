@@ -10,36 +10,18 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"rotten_c\",display:{color:2654236},HideFlags:68}"
+              "tag": "{potAttr:\"rotten_c\",display:{color:2654236},HideFlags:72,Unbreakable:1,PotAttr:{stat:{health:15,defense:20,strength:5}}}"
             },
             {
               "function": "set_name",
               "name": {"text": "Rotten Chestplate", "italic": false, "color": "green"}
             },
             {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "generic.attack_damage",
-                  "name": "attack_damage",
-                  "operation": "multiply_total",
-                  "amount": 0.03,
-                  "slot": "chest"
-                },
-                {
-                  "attribute": "generic.armor",
-                  "name": "armor",
-                  "operation": "addition",
-                  "amount": 5,
-                  "slot": "chest"
-                },
-                {
-                  "attribute": "generic.max_health",
-                  "name": "armor_toughness",
-                  "operation": "addition",
-                  "amount": 3,
-                  "slot": "chest"
-                }
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+15","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+20","color":"green"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+5","color":"red"}]
               ]
             }
           ]

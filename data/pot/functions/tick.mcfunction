@@ -34,3 +34,26 @@ execute as @e[tag=util_ghostBlock] run data merge entity @s {Time:0}
 
 # MAKE THEM IN THE LAST!
 clear @a #pot:craftable{PotCrafting:{shouldExist:1b}}
+
+effect give @a resistance infinite 10 true
+
+scoreboard players add @e[tag=damageDisplay] genericScore 1
+# execute as @e[tag=damageDisplay,scores={genericScore=60}] run function pot:combat/start_animation
+kill @e[tag=damageDisplay,scores={genericScore=80..}]
+
+execute as @e[nbt={HurtTime:10s}] run function pot:combat/hurt
+
+execute as @e[type=!player,tag=!combat_initiated] run function pot:combat/init
+tag @e[type=!player] add combat_initiated
+
+execute as @a run attribute @s generic.attack_damage modifier add 556d191f-4e34-4581-9b08-c286cba06472 "NO REAL DMG" -0.999999 multiply
+
+execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"     ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}]]
+
+scoreboard players add naturalRegenTimer genericScore 1
+execute if score naturalRegenTimer genericScore matches 40 as @a if score @s combat.health < @s combat.maxHealth run scoreboard players add @s combat.health 5
+execute if score naturalRegenTimer genericScore matches 40 run scoreboard players set naturalRegenTimer genericScore 0
+
+scoreboard players add updateHealthTimer genericScore 1
+execute if score updateHealthTimer genericScore matches 20 run execute as @a run function pot:combat/update_max_health
+execute if score updateHealthTimer genericScore matches 20 run scoreboard players set updateHealthTimer genericScore 0

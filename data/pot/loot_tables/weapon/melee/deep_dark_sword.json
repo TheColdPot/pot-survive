@@ -10,18 +10,11 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4}"
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,PotAttr:{id:\"warden_blade\",stat:{damage:520,strength:70}}}"
             },
             {
               "function": "set_attributes",
               "modifiers": [
-                {
-                  "name": "attack_damage",
-                  "attribute": "generic.attack_damage",
-                  "operation": "addition",
-                  "slot": "mainhand",
-                  "amount": 53.5
-                },
                 {
                   "name": "attack_speed",
                   "attribute": "generic.attack_speed",
@@ -34,6 +27,13 @@
             {
               "function": "set_name",
               "name": {"text": "Sword of the Deep Dark", "color": "light_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+520","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+70","color":"red"}]
+              ]
             }
           ]
         }

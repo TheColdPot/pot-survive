@@ -88,7 +88,7 @@ item replace block ~ ~ ~ container.25 with gray_stained_glass_pane{display:{Name
   const generatedNamespacedUUID = `pot:advanced_crafting/recipes/take/` + id;
   fs.mkdirSync(parentDirPath, {recursive: true});
   fs.appendFileSync(path.resolve(ROOT_DIR, 'check_recipes.mcfunction'), `
-execute if data block ~ ~ ~ {Items:[${slots.map((slot, index) => !slot ? null : `{Slot:${slotMapping[index]}b,id:"${slot.id}"${slot.nbt ? `,tag:${slot.nbt}`: ''}}`).filter(_=>_).join(',')}]}${slots.map((_,index) => _ ? null : ` unless data block ~ ~ ~ Items[{Slot:${slotMapping[index]}b}]`).filter(_=>_).join('')} ${slots.map((slot, index) => !slot ? null : `if score @s crft_slot${index} matches ${slot.count}..`).filter(_=>_).join(' ')} run function pot:advanced_crafting/recipes/${recipePath}
+execute if data block ~ ~ ~ {Items:[${slots.map((slot, index) => !slot ? null : `{Slot:${slotMapping[index]}b,id:"${slot.id}"${slot.nbt ? `,tag:${slot.nbt}`: ''}}`).filter(_=>_).join(',')}]}${slots.map((_,index) => _ ? null : ` unless data block ~ ~ ~ Items[{Slot:${slotMapping[index]}b}]`).filter(_=>_).join('')} ${slots.map((slot, index) => !slot ? null : `if score @s crafting.slot${index} matches ${slot.count}..`).filter(_=>_).join(' ')} run function pot:advanced_crafting/recipes/${recipePath}
 `);
   fs.appendFileSync(path.resolve(ROOT_DIR, 'take_out_recipes.mcfunction'), `
 execute store success score @s crafting.takeRecipe run clear @s #pot:craftable{PotCrafting:{recipeId:"${id}"}}
@@ -100,7 +100,7 @@ execute if score @s crafting.takeRecipe matches 1.. at @s run data merge entity 
 # TheColdPot <3
 data merge entity @s {data:{toCraft:"null"}}
 ` +
-slots.map((slot, index) => !slot ? null : `scoreboard players remove @s crft_slot${index} ${slot.count}\nexecute store result block ~ ~ ~ Items[{Slot:${slotMapping[index]}b}].Count int 1 run scoreboard players get @s crft_slot${index}`).filter(_=>_).join('\n') +
+slots.map((slot, index) => !slot ? null : `scoreboard players remove @s crafting.slot${index} ${slot.count}\nexecute store result block ~ ~ ~ Items[{Slot:${slotMapping[index]}b}].Count int 1 run scoreboard players get @s crafting.slot${index}`).filter(_=>_).join('\n') +
 '\nexecute as @a run function pot:advanced_crafting/take_out_recipes');
   fs.writeFileSync(resultPath, `#> pot:advanced_crafting/recipes/${recipePath}
 # 由妈妈生的™TheColdPot生成

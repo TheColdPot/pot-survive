@@ -16,6 +16,25 @@ scoreboard objectives add uuid0 dummy "UUID[0]"
 scoreboard objectives add uuid1 dummy "UUID[1]"
 scoreboard objectives add uuid2 dummy "UUID[2]"
 scoreboard objectives add uuid3 dummy "UUID[3]"
+scoreboard objectives add combat._finalDmg dummy "Final Damage (Temp)"
+scoreboard objectives add combat.melee dummy "Final Melee Damage"
+scoreboard objectives add combat.damage dummy "Damage"
+scoreboard objectives add combat.displayDamage dummy "Display Damage"
+# scoreboard objectives add combat.damageDeal dummy "Damage dealing"
+scoreboard objectives add combat.strength dummy "Strength"
+scoreboard objectives add combat._armorStat dummy "Armor Stat"
+# scoreboard objectives add combat.combatSpeed dummy "Strength"
+scoreboard objectives add combat.maxHealth dummy "Max health"
+scoreboard objectives add combat.health dummy {"text":"❤","color":"red"}
+scoreboard objectives add combat.defense dummy {"text":"Defense","color":"green"}
+scoreboard objectives add combat._defense dummy "Defense + 100"
+scoreboard objectives setdisplay belowName combat.health
+scoreboard objectives add constant dummy "Constant"
+scoreboard players set 100 constant 100
+scoreboard players set @a combat.maxHealth 100
+scoreboard objectives add combat.attackSpeed dummy "Attack Speed"
+scoreboard objectives add combat._cooldown dummy "Attack Cooldown"
+
 
 scoreboard objectives add marker_marking dummy "Marker: marking"
 

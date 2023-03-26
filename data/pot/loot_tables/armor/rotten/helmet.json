@@ -10,36 +10,18 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"rotten_h\",display:{color:32796},HideFlags:68}"
+              "tag": "{potAttr:\"rotten_h\",display:{color:32796},Unbreakable:1,HideFlags:72,PotAttr:{stat:{health:5,defense:10,strength:5}}}"
             },
             {
               "function": "set_name",
               "name": {"text": "Rotten Helmet", "italic": false, "color": "green"}
             },
             {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "generic.attack_damage",
-                  "name": "attack_damage",
-                  "operation": "multiply_total",
-                  "amount": 0.01,
-                  "slot": "head"
-                },
-                {
-                  "attribute": "generic.armor",
-                  "name": "armor",
-                  "operation": "addition",
-                  "amount": 2,
-                  "slot": "head"
-                },
-                {
-                  "attribute": "generic.max_health",
-                  "name": "armor_toughness",
-                  "operation": "addition",
-                  "amount": 1,
-                  "slot": "head"
-                }
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+5","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+10","color":"green"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+5","color":"red"}]
               ]
             }
           ]
