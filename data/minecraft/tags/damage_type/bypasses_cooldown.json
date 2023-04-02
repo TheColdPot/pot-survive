@@ -3,6 +3,7 @@
     "values":[
      "minecraft:mob_attack",
      "minecraft:arrow",
-     "player_attack"
+     "minecraft:player_attack",
+     "minecraft:magic"
     ]
   }

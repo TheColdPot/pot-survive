@@ -10,8 +10,5 @@
         }
       }
     }
-  },
-  "rewards": {
-    "function": "pot:combat/melee_attack"
   }
 }

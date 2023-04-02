@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"wardenBlade\",PotAttr:{id:\"warden_blade\",stat:{damage:500}}}"
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"wardenBlade\",PotAttr:{id:\"warden_blade\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:500}}}"
             },
             {
               "function": "set_name",

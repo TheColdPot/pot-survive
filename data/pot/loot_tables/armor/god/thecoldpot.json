@@ -10,17 +10,28 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{PotAttr:{stat:{strength:500,health:500}},SkullOwner:\"TheColdPot\",HideFlags:68}"
+              "tag": "{PotAttr:{stat:{strength:1000,health:-1000}},SkullOwner:\"TheColdPot\",HideFlags:68}"
             },
             {
               "function": "set_name",
-              "name": {"text": "TheColdPot's Head", "italic": false, "color": "red"}
+              "name": {"text": "Skull of Hopelessness", "italic": false, "color": "red"}
             },
             {
               "function": "set_lore",
               "lore": [
-                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+500","color":"red"}],
-                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+500","color":"red"}]
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"-1000","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+1000","color":"red"}]
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                {"text":"If I can't destroy anything I hate,","color":"dark_gray"},
+                {"text":"I can only destroy myself.","color":"dark_gray"},
+                {"text":"Afraid to disappear though,","color":"dark_gray"},
+                {"text":"Struggle to live, struggle to be gone.","color":"dark_gray"},
+                [{"text":"— Thoughts of ","color":"gray","italic":false},{"text":"TheColdPot","obfuscated": true},", somewhen in 2023"]
               ]
             }
           ]

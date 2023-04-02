@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"netherStarSword\",PotAttr:{id:\"nether_star_sword\",stat:{damage:400,strength:175}}}"
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"netherStarSword\",PotAttr:{id:\"nether_star_sword\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:400,strength:175}}}"
             },
             {
               "function": "set_name",

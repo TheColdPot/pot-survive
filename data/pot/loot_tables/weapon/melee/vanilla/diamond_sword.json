@@ -1,0 +1,31 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "diamond_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"diamond_sword\",stat:{gearType:\"weapon\",statSlot:[\"mainhand\"],damage:60,strength:20}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"translate": "item.minecraft.diamond_sword", "color": "blue", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+60","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+20","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

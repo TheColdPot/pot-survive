@@ -26,14 +26,22 @@ scoreboard objectives add combat._armorStat dummy "Armor Stat"
 # scoreboard objectives add combat.combatSpeed dummy "Strength"
 scoreboard objectives add combat.maxHealth dummy "Max health"
 scoreboard objectives add combat.health dummy {"text":"❤","color":"red"}
+scoreboard objectives add combat._regen dummy "Health Regen Calculation"
 scoreboard objectives add combat.defense dummy {"text":"Defense","color":"green"}
+scoreboard objectives add combat.ferocity dummy "Ferocity"
+scoreboard objectives add combat.ferocityAttacks dummy "Ferocity Execution Count"
+scoreboard objectives add combat.ferocityDamage dummy "Ferocity Damage"
+scoreboard objectives add combat._ferocity dummy "Ferocity Temp"
 scoreboard objectives add combat._defense dummy "Defense + 100"
 scoreboard objectives setdisplay belowName combat.health
 scoreboard objectives add constant dummy "Constant"
 scoreboard players set 100 constant 100
+scoreboard players set 5 constant 5
+scoreboard players set 0 constant 0
 scoreboard players set @a combat.maxHealth 100
 scoreboard objectives add combat.attackSpeed dummy "Attack Speed"
 scoreboard objectives add combat._cooldown dummy "Attack Cooldown"
+# scoreboard objectives add combat._clearVanilla dummy "Clear vanilla"
 
 
 scoreboard objectives add marker_marking dummy "Marker: marking"

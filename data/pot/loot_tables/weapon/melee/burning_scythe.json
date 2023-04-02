@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"netherScythe\",PotAttr:{id:\"nether_scythe\",stat:{damage:200,strength:50}}}"
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"netherScythe\",PotAttr:{id:\"nether_scythe\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:200,strength:50}}}"
             },
             {
               "function": "set_name",

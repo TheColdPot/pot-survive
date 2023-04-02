@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"warden_b\",display:{color:2513516},Unbreakable:1b,HideFlags:68}"
+              "tag": "{potAttr:\"warden_b\",display:{color:2513516},Unbreakable:1b,HideFlags:68,PotAttr:{stat:{health:260,defense:100,strength:45}}}"
             },
             {
               "function": "set_name",
@@ -20,44 +20,14 @@
               "function": "set_lore",
               "replace": false,
               "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+260","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+100","color":"green"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+45","color":"red"}],
                 "",
                 {"text": "Full Set Bonus: Brute Force", "color": "gold", "italic": false},
                 [{"text": "Halves your speed but grants ", "color": "gray", "italic": false}],
                 [{"text": "+20% ", "color": "red", "italic": false},{"text": "base weapon damage for", "color": "gray", "italic": false}],
                 [{"text": "every ", "color": "gray", "italic": false},{"text": "25 ", "color": "green", "italic": false},{"text": "speed", "color": "gray", "italic": false}]
-              ]
-            },
-            {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "generic.attack_damage",
-                  "name": "attack_damage",
-                  "operation": "multiply_total",
-                  "amount": 0.05,
-                  "slot": "feet"
-                },
-                {
-                  "attribute": "generic.armor",
-                  "name": "armor",
-                  "operation": "addition",
-                  "amount": 4,
-                  "slot": "feet"
-                },
-                {
-                  "attribute": "generic.armor_toughness",
-                  "name": "armor_toughness",
-                  "operation": "addition",
-                  "amount": 4,
-                  "slot": "feet"
-                },
-                {
-                  "attribute": "generic.knockback_resistance",
-                  "name": "armor_toughness",
-                  "operation": "addition",
-                  "amount": 0.2,
-                  "slot": "feet"
-                }
               ]
             }
           ]

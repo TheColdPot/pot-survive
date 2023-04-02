@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,PotAttr:{id:\"stone_hunk\",stat:{damage:100,strength:100}}}"
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,PotAttr:{id:\"stone_hunk\",stat:{damage:100,gearType:\"weapon\",statSlot:[\"mainhand\"],strength:100}}}"
             },
             {
               "function": "set_name",

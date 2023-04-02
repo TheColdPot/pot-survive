@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potGear:\"helmet\",potAttr:\"warden_h\",SkullOwner:{Id:[I;1,1,4,5],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWNhZmU4NDhmZDc1NWQ5OThhMDZhNTgzMjE5MTIyNDRjZjc2ZWVmMWNlNzhhNTEyMjhmZGQxMDIwYWI3M2E2OCJ9fX0=\"}]}},Unbreakable:1b,HideFlags:4}"
+              "tag": "{potGear:\"helmet\",potAttr:\"warden_h\",SkullOwner:{Id:[I;1,1,4,5],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWNhZmU4NDhmZDc1NWQ5OThhMDZhNTgzMjE5MTIyNDRjZjc2ZWVmMWNlNzhhNTEyMjhmZGQxMDIwYWI3M2E2OCJ9fX0=\"}]}},Unbreakable:1b,HideFlags:4,PotAttr:{stat:{health:270,defense:120,strength:45}}}"
             },
             {
               "function": "set_name",
@@ -20,44 +20,14 @@
               "function": "set_lore",
               "replace": false,
               "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+270","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+120","color":"green"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+45","color":"red"}],
                 "",
                 {"text": "Full Set Bonus: Brute Force", "color": "gold", "italic": false},
                 [{"text": "Halves your speed but grants ", "color": "gray", "italic": false}],
                 [{"text": "+20% ", "color": "red", "italic": false},{"text": "base weapon damage for", "color": "gray", "italic": false}],
                 [{"text": "every ", "color": "gray", "italic": false},{"text": "25 ", "color": "green", "italic": false},{"text": "speed", "color": "gray", "italic": false}]
-              ]
-            },
-            {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "generic.attack_damage",
-                  "name": "attack_damage",
-                  "operation": "multiply_total",
-                  "amount": 0.05,
-                  "slot": "head"
-                },
-                {
-                  "attribute": "generic.armor",
-                  "name": "armor",
-                  "operation": "addition",
-                  "amount": 5,
-                  "slot": "head"
-                },
-                {
-                  "attribute": "generic.armor_toughness",
-                  "name": "armor_toughness",
-                  "operation": "addition",
-                  "amount": 4,
-                  "slot": "head"
-                },
-                {
-                  "attribute": "generic.knockback_resistance",
-                  "name": "armor_toughness",
-                  "operation": "addition",
-                  "amount": 0.2,
-                  "slot": "head"
-                }
               ]
             }
           ]

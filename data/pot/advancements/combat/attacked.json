@@ -3,13 +3,19 @@
             "damage": {
                   "trigger": "minecraft:player_hurt_entity",
                   "conditions": {
+                        "damage": {
+                              "type": {
+                                    "is_magic": false,
+                                    "bypasses_invulnerability": false
+                              }
+                        },
                         "player": [
                               {
                                     "condition": "inverted",
                                     "term": {
                                           "condition": "entity_scores",
                                           "scores": {
-                                                "Cooldown": {
+                                                "combat._cooldown": {
                                                       "min": 1
                                                 }
                                           },

@@ -1,2 +1,2 @@
-scoreboard players set @s combat.health 100
+scoreboard players operation @s combat.health = @s combat.maxHealth
 kill @s

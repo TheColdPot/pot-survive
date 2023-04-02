@@ -1,0 +1,31 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_boots",
+          "functions": [
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "randomProvider",
+                  "attribute": "generic.attack_knockback",
+                  "operation": "addition",
+                  "slot": "offhand",
+                  "amount": {
+                    "min": 0,
+                    "max": 100
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
