@@ -1,11 +1,9 @@
-function pot:grant_armor_tags
-
 # scoreboard players add @e[tag=transformWolf] genericScore 1
 # execute as @e[tag=transformWolf,scores={genericScore=100..}] at @s run function pot:tame/remove
 
 execute as @a[nbt={Inventory:[{id:"minecraft:anvil"}]}] run function pot:ban_anvil
 
-function pot:full_set/index
+# function pot:full_set/index
 
 execute as @a[nbt={SelectedItem:{tag:{potAttr:"giantSpoon"}}}] run function pot:weapon_bonus/giant_spoon
 
@@ -38,8 +36,8 @@ clear @a #pot:craftable{PotCrafting:{shouldExist:1b}}
 effect give @a resistance infinite 10 true
 
 scoreboard players add @e[tag=damageDisplay] genericScore 1
-# execute as @e[tag=damageDisplay,scores={genericScore=60}] run function pot:combat/start_animation
-kill @e[tag=damageDisplay,scores={genericScore=80..}]
+# execute as @e[tag=damageDisplay,scores={genericScore=20}] run function pot:combat/start_animation
+kill @e[tag=damageDisplay,scores={genericScore=60..}]
 
 execute as @e[nbt={HurtTime:10s}] run function pot:combat/hurt
 
@@ -48,7 +46,7 @@ tag @e[type=!player] add combat_initiated
 
 execute as @a run attribute @s generic.attack_damage modifier add 556d191f-4e34-4581-9b08-c286cba06472 "NO REAL DMG" -0.999999 multiply
 
-execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"  ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}],"  ",[{"text":"⫽ ","color":"red"},{"score":{"name": "@s","objective": "combat.ferocity"}},"%"],"  ",[{"text":"⚔ ","color":"yellow"},{"score":{"name": "@s","objective": "combat.attackSpeed"}},"%"]]
+execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"  ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}],"  ",[{"text":"⫽ ","color":"red"},{"score":{"name": "@s","objective": "combat.ferocity"}},"%"],"  ",[{"text":"⚔ ","color":"yellow"},{"score":{"name": "@s","objective": "combat.attackSpeed"}},"%"],"  ",[{"text":"☠ ","color":"blue"},{"score":{"name": "@s","objective": "combat.critChance"}},"%/",{"score":{"name": "@s","objective": "combat.critDamage"}}]]
 
 scoreboard players add naturalRegenTimer genericScore 1
 execute if score naturalRegenTimer genericScore matches 40 as @a run function pot:combat/health_regeneration
@@ -66,4 +64,4 @@ execute as @a[nbt=!{SelectedItem:{tag:{PotAttr:{}}}}] run function pot:combat/re
 
 execute as @a run scoreboard players operation @s oldSelectedSlot = @s selectedSlot
 execute as @a store result score @s selectedSlot run data get entity @s SelectedItemSlot 
-execute as @a unless score @s oldSelectedSlot = @s selectedSlot at @s run function #pot:on_gear_may_change
+execute as @a unless score @s oldSelectedSlot = @s selectedSlot at @s run function #pot:on/gear_may_changed

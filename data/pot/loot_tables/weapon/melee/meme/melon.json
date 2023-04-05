@@ -1,0 +1,42 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "glistering_melon_slice",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"family_who_knows\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:-100,strength:-100}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "早餐", "color": "dark_red", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"-100","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"-100","color":"red"}]
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                [{"text": "技能: 家人们，谁懂啊", "color": "red", "italic": false}],
+                [{"text": "遇见下头男会变成西瓜！", "color": "gray", "italic": false}],
+                [{"text": "极其不稳定！", "color": "dark_gray", "italic": true}],
+                "",
+                [{"text": "UNOBTAINABLE POOP MEME SWORD", "color": "dark_red", "italic": false, "bold": true}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

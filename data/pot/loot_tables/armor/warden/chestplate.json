@@ -10,11 +10,11 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"warden_c\",display:{color:2113352},Unbreakable:1b,HideFlags:68,PotAttr:{stat:{health:300,defense:140,strength:45}}}"
+              "tag": "{display:{color:2113352},Unbreakable:1b,HideFlags:68,PotAttr:{id:\"warden_chestplate\",stat:{health:300,defense:140,strength:45},armor:\"warden\"}}"
             },
             {
               "function": "set_name",
-              "name": {"text": "Warden's Chestplate", "italic": false, "color": "gold"}
+              "name": {"text": "Warden Chestplate", "italic": false, "color": "gold"}
             },
             {
               "function": "set_lore",

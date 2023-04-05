@@ -21,7 +21,7 @@
               "lore": [
                 [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+180","color":"red"}],
                 [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+50","color":"red"}],
-                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+20","color":"red"}],
+                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+20","color":"green"}],
                 "",
                 {"text": "Ability: Crazy Reaping", "color": "gold", "italic": false},
                 [{"text": "Gain ", "color": "gray", "italic": false},{"text":"4❤","color":"red"}," to ", {"text":"nearby players","color":"yellow"}],

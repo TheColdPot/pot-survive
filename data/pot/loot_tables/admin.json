@@ -21,7 +21,7 @@
               "lore": [
                 [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+500","color":"red"}],
                 [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+100","color":"red"}],
-                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+500","color":"red"}]
+                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+500","color":"green"}]
               ]
             }
           ]

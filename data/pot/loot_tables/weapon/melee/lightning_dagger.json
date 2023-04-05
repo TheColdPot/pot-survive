@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"lightning_dagger\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:220,strength:180,critChance:100,attackSpeed:30}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Lightning Dagger", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+220","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+180","color":"red"}],
+                [{"text":"Crit Chance: ","color":"gray","italic":false}, {"text":"+100%","color":"red"}],
+                [{"text":"Attack Speed: ","color":"gray","italic":false}, {"text":"+30%","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

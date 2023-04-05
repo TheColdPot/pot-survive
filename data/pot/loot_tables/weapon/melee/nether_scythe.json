@@ -21,7 +21,7 @@
               "lore": [
                 [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+115","color":"red"}],
                 [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+20","color":"red"}],
-                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+10","color":"red"}],
+                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+10","color":"green"}],
                 "",
                 {"text": "Ability: Reaping", "color": "gold", "italic": false},
                 [{"text": "Gain ", "color": "gray", "italic": false},{"text":"2❤","color":"red"}," from killing."]

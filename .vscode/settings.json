@@ -1,6 +1,6 @@
 {
     "datapack.env.cmdVersion": "1.19.4",
+    "datapack.env.dataVersion": "23w13a",
     "editor.tabSize": 2,
     "editor.indentSize": "tabSize",
-    "datapack.lint.nameOfNbtCompoundTagKeys": null
 }

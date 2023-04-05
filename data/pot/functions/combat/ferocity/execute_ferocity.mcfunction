@@ -9,7 +9,7 @@
 playsound minecraft:entity.player.hurt_sweet_berry_bush hostile @a ~ ~ ~ 5 0.87
 execute on attacker run scoreboard players operation @e[sort=nearest,limit=1] combat.displayDamage = @s combat.ferocityDamage
 execute on attacker run scoreboard players operation @e[sort=nearest,limit=1] combat.health -= @s combat.ferocityDamage
-function pot:combat/display_damage_amount
+function pot:combat/display/display_ferocity_damage
 execute at @s summon text_display run function pot:combat/nonplayer_health_interpreter
 
 execute if score @s combat.health matches ..0 on attacker run damage @e[sort=nearest,limit=1] 0.01 minecraft:magic by @s

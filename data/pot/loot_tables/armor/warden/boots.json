@@ -10,11 +10,11 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"warden_b\",display:{color:2513516},Unbreakable:1b,HideFlags:68,PotAttr:{stat:{health:260,defense:100,strength:45}}}"
+              "tag": "{display:{color:2513516},Unbreakable:1b,HideFlags:68,PotAttr:{id:\"warden_boots\",stat:{health:260,defense:100,strength:45},armor:\"warden\"}}"
             },
             {
               "function": "set_name",
-              "name": {"text": "Warden's Boots", "italic": false, "color": "gold"}
+              "name": {"text": "Warden Boots", "italic": false, "color": "gold"}
             },
             {
               "function": "set_lore",
