@@ -10,19 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:4,potAttr:\"netherScythe\"}"
-            },
-            {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "name": "attack_damage",
-                  "attribute": "generic.attack_damage",
-                  "operation": "addition",
-                  "slot": "mainhand",
-                  "amount": 6
-                }
-              ]
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,potAttr:\"netherScythe\",PotAttr:{id:\"nether_scythe\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:115,strength:20,ferocity:10}}}"
             },
             {
               "function": "set_name",
@@ -31,6 +19,9 @@
             {
               "function": "set_lore",
               "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+115","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+20","color":"red"}],
+                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+10","color":"red"}],
                 "",
                 {"text": "Ability: Reaping", "color": "gold", "italic": false},
                 [{"text": "Gain ", "color": "gray", "italic": false},{"text":"2❤","color":"red"}," from killing."]

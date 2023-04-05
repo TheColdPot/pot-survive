@@ -36,11 +36,14 @@ scoreboard objectives add combat._defense dummy "Defense + 100"
 scoreboard objectives setdisplay belowName combat.health
 scoreboard objectives add constant dummy "Constant"
 scoreboard players set 100 constant 100
+scoreboard players set 500 constant 500
 scoreboard players set 5 constant 5
 scoreboard players set 0 constant 0
 scoreboard players set @a combat.maxHealth 100
 scoreboard objectives add combat.attackSpeed dummy "Attack Speed"
 scoreboard objectives add combat._cooldown dummy "Attack Cooldown"
+scoreboard objectives add oldSelectedSlot dummy "Old selected slot"
+scoreboard objectives add selectedSlot dummy "Selected slot"
 # scoreboard objectives add combat._clearVanilla dummy "Clear vanilla"
 
 

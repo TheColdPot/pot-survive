@@ -1,0 +1,6 @@
+{
+  "values": [
+    "pot:combat/calculate_misc_combat_stat",
+    "pot:combat/update_max_health"
+  ]
+}
