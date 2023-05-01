@@ -21,4 +21,6 @@ execute as @e[tag=ferocityParticle] at @s run function pot:combat/ferocity/parti
 
 scoreboard players remove @s combat.ferocityAttacks 1
 execute if entity @s[scores={combat.health=..-1}] run kill @s
-# say im executed by ferocity
+
+scoreboard players remove @s combat.ferocitySchedules 1
+# execute if score @s combat.ferocityAttacks matches 0 if score @s combat.ferocitySchedules matches 1.. run function pot:combat/ferocity/apply_ferocity_schedule

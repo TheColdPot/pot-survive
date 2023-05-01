@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:2125485},Unbreakable:1b,HideFlags:70,PotAttr:{id:\"necrotic_wither_leggings\",stat:{health:255,defense:145,critDamage:50},armor:\"wither\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Necrotic Wither Leggings", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+255","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+145","color":"green"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+50%","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

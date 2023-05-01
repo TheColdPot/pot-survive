@@ -1,0 +1,1 @@
+execute if data entity @s Inventory[{Slot:103b,tag:{PotAttr:{id:"bloody_helmet"}}}] run function pot:gear/armor/bloody_helmet

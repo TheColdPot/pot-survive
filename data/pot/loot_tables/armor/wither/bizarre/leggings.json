@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:1245278},Unbreakable:1b,HideFlags:70,PotAttr:{id:\"bizarre_wither_leggings\",stat:{health:240,defense:130,critDamage:25},armor:\"wither\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Bizarre Wither Leggings", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+240","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+130","color":"green"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+25%","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

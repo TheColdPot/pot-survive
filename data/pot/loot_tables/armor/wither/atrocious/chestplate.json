@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_chestplate",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:0},Unbreakable:1b,Trim:{material:\"minecraft:gold\",pattern:\"minecraft:sentry\"},HideFlags:198,PotAttr:{id:\"atrocious_wither_chestplate\",stat:{health:280,defense:170,critDamage:75},armor:\"wither\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Atrocious Wither Chestplate", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+280","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+170","color":"green"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+75%","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "netherite_axe",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:6,PotAttr:{id:\"admin\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{ferocity:500,damage:-10000,strength:10000}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Health Buffer", "color": "dark_red", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"-10000","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+10000","color":"red"}],
+                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+10000","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

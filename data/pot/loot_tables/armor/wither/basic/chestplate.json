@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_chestplate",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:1179682},Unbreakable:1b,HideFlags:70,PotAttr:{id:\"wither_chestplate\",stat:{health:240,defense:130,critDamage:20},armor:\"wither\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Wither Chestplate", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+240","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+130","color":"green"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+20%","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

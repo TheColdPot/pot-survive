@@ -5,7 +5,7 @@ execute at @s on attacker if entity @s[type=!player] run scoreboard players oper
 execute at @s on attacker if entity @s[type=!player] run scoreboard players operation @e[sort=nearest,limit=1] combat.health -= @s combat.damage
 # scoreboard players operation @s combat.health -= @s combat.displayDamage
 # execute at @s on attacker if entity @s[type=!player] run function pot:combat/display/display_damage
-execute at @s summon text_display run function pot:combat/nonplayer_health_interpreter
+# execute at @s summon text_display run function pot:combat/nonplayer_health_interpreter
 execute if entity @s[scores={combat.health=..-1}] run kill @s
 execute if entity @s[scores={combat.health=0..}] run function pot:combat/ferocity/start_check
 

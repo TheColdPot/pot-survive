@@ -1,1 +1,0 @@
-tellraw @a ["", {"text":"☠ ","color":"red"}, [{"selector":"@s","color":"gray"}, " died."]]

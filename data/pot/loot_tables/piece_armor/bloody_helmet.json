@@ -1,0 +1,45 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_helmet",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potGear:\"helmet\",Trim:{material:\"minecraft:redstone\",pattern:\"minecraft:dune\"},Unbreakable:1b,HideFlags:198,PotAttr:{id:\"bloody_helmet\",stat:{health:265,defense:200,strength:50}},display:{color:11944966}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Bloody Helmet", "italic": false, "color": "light_purple"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+265","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+200","color":"green"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+50","color":"red"}]
+              ]
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                "",
+                {"text": "Piece Bonus: Lunatic Warrior", "color": "gold", "italic": false},
+                [{"text": "Halves your defense but grants ", "color": "gray", "italic": false}],
+                [{"text": "+1 ", "color": "red", "italic": false},{"text": "Strength", "color": "red", "italic": false}, {"text":" for ","color":"gray"},{"text": "every ", "color": "gray", "italic": false},{"text": "2 ", "color": "green", "italic": false},{"text": "defense.", "color": "gray", "italic": false}],
+                [{"text": "(Capped at +400 Strength!)", "color": "dark_gray", "italic": false}],
+                [{"text": "Divides your ", "color": "red", "italic": false},{"text": "Crit Chance", "color": "blue"},{"text": " by 2!", "color": "red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

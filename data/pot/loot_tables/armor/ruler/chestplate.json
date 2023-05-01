@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_chestplate",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:70,PotAttr:{id:\"ruler_chestplate\",stat:{health:85,defense:220},armor:\"ruler\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Ruler's Chestplate", "italic": false, "color": "dark_purple"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+85","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+220","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

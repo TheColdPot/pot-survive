@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:0},Unbreakable:1b,Trim:{material:\"minecraft:gold\",pattern:\"minecraft:tide\"},HideFlags:198,PotAttr:{id:\"atrocious_wither_leggings\",stat:{health:260,defense:160,critDamage:75},armor:\"wither\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Atrocious Wither Leggings", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+260","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+160","color":"green"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+75%","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

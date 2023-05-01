@@ -7,31 +7,21 @@ execute as @a[nbt={Inventory:[{id:"minecraft:anvil"}]}] run function pot:ban_anv
 
 execute as @a[nbt={SelectedItem:{tag:{potAttr:"giantSpoon"}}}] run function pot:weapon_bonus/giant_spoon
 
-execute as @e[type=marker,tag=advancedCraftingMarker] at @s run function pot:advanced_crafting/marker
-clear @a #pot:uiframe{potAttr:"uiFrame"}
+execute as @e[type=marker,tag=crafting.marker] at @s run function pot:crafting/marker
 
-
-function pot:advanced_crafting/clear_ui_elements
-
-execute if entity @a[predicate=pot:proxima_dimension] in pot:proxima_dimension run function pot:boss/proxima/boss_tick
-
-scoreboard players set @a[predicate=!pot:proxima_dimension,scores={trigger.proximaDeath=1..}] trigger.proximaDeath 0
+#remove ui items
+clear @a #pot:ui{PotAttr:{ui:1b}}
+kill @e[type=item,nbt={Item:{tag:{PotAttr:{ui:1b}}}}]
 
 execute as @a store result score @s uuid0 run data get entity @s UUID[0]
 execute as @a store result score @s uuid1 run data get entity @s UUID[1]
 execute as @a store result score @s uuid2 run data get entity @s UUID[2]
 execute as @a store result score @s uuid3 run data get entity @s UUID[3]
 
-# execute if entity @e[type=marker,tag=craftingTableUsing,tag=advancedCraftingMarker]
-data merge entity @e[type=item,nbt={Item:{tag:{PotCrafting:{isCraftingResult:1b}}}},limit=1] {PickupDelay:0s}
-data remove entity @e[type=item,nbt={Item:{tag:{PotCrafting:{isCraftingResult:1b}}}},limit=1] Item.tag.PotCrafting
-
-execute as @e[tag=util_ghostBlock] run data merge entity @s {Time:0}
 
 
-
-# MAKE THEM IN THE LAST!
-clear @a #pot:craftable{PotCrafting:{shouldExist:1b}}
+# # MAKE THEM IN THE LAST!
+# clear @a #pot:craftable{PotCrafting:{shouldExist:1b}}
 
 effect give @a resistance infinite 10 true
 
@@ -46,7 +36,7 @@ tag @e[type=!player] add combat_initiated
 
 execute as @a run attribute @s generic.attack_damage modifier add 556d191f-4e34-4581-9b08-c286cba06472 "NO REAL DMG" -0.999999 multiply
 
-execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"  ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}],"  ",[{"text":"⫽ ","color":"red"},{"score":{"name": "@s","objective": "combat.ferocity"}},"%"],"  ",[{"text":"⚔ ","color":"yellow"},{"score":{"name": "@s","objective": "combat.attackSpeed"}},"%"],"  ",[{"text":"☠ ","color":"blue"},{"score":{"name": "@s","objective": "combat.critChance"}},"%/",{"score":{"name": "@s","objective": "combat.critDamage"}}]]
+execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"  ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}],"  ",[{"text":"❁ ","color":"red"},{"score":{"name": "@s","objective": "combat.strength"}}],"  ",[{"text":"⫽ ","color":"red"},{"score":{"name": "@s","objective": "combat.ferocity"}},"%"],"  ",[{"text":"⚔ ","color":"yellow"},{"score":{"name": "@s","objective": "combat.attackSpeed"}},"%"],"  ",[{"text":"☠ ","color":"blue"},{"score":{"name": "@s","objective": "combat.critChance"}},"%/",{"score":{"name": "@s","objective": "combat.critDamage"}}]]
 
 scoreboard players add naturalRegenTimer genericScore 1
 execute if score naturalRegenTimer genericScore matches 40 as @a run function pot:combat/health_regeneration

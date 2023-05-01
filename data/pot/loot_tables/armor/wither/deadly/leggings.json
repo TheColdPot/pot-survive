@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:3014731},Unbreakable:1b,HideFlags:70,PotAttr:{id:\"deadly_wither_leggings\",stat:{health:235,defense:125,critDamage:22},armor:\"wither\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Deadly Wither Leggings", "italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+235","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+125","color":"green"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+22%","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

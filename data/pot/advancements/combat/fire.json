@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "impossible",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_fire": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pot:combat/player_damages/fire"
+  }
+}

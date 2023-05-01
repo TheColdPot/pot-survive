@@ -27,11 +27,11 @@
               "function": "set_lore",
               "lore": [
                 "",
-                {"text":"If I can't destroy anything I hate,","color":"dark_gray"},
-                {"text":"I can only destroy myself.","color":"dark_gray"},
-                {"text":"Afraid to disappear though,","color":"dark_gray"},
-                {"text":"Struggle to live, struggle to be gone.","color":"dark_gray"},
-                [{"text":"— Thoughts of ","color":"gray","italic":false},{"text":"TheColdPot","obfuscated": true},", somewhen in 2023"]
+                {"text":"My emotion is getting worse.","color":"dark_gray"},
+                {"text":"It's so unstable I can't control it at all.","color":"dark_gray"},
+                {"text":"Please help me.","color":"dark_gray"},
+                {"text":"I ain't ready to die.","color":"dark_gray"},
+                [{"text":"— Diary of ","color":"gray","italic":false},{"text":"TheColdPot","obfuscated": true},"'s, somewhen in 2023"]
               ]
             }
           ]

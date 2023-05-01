@@ -1,10 +1,11 @@
 advancement revoke @s only pot:combat/trigger_melee
 
-function pot:combat/calculate_base_damage
+# function pot:combat/calculate_base_damage
 
 execute summon armor_stand run function pot:combat/summon_crit_checker
 
 scoreboard players operation @s combat.melee = @s combat._finalDmg
+scoreboard players operation @s combat.baseMelee = @s combat.melee
 execute if entity @s[tag=combat.applyCrit] run scoreboard players operation @s combat.melee *= @s combat.critDamage
 execute if entity @s[tag=combat.applyCrit] run scoreboard players operation @s combat.melee /= 100 constant
 execute if entity @s[tag=combat.applyCrit] run scoreboard players operation @s combat.melee += @s combat._finalDmg

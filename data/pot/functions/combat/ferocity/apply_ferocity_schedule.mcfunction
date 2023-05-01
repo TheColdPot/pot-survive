@@ -1,0 +1,1 @@
+execute summon text_display run function pot:combat/ferocity/_schedule_helper

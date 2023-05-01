@@ -1,0 +1,34 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "cherry_sapling",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"emerald_katana\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:30,strength:20,critChance:15,critDamage:50,ferocity:50}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "桜", "color": "red", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+30","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+20","color":"red"}],
+                [{"text":"Crit Chance: ","color":"gray","italic":false}, {"text":"+15%","color":"red"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+50%","color":"red"}],
+                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+50","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

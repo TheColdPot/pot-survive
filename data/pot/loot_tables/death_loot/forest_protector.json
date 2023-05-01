@@ -1,0 +1,109 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "item",
+          "name": "oak_wood",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "oak_log",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 6,
+                "max": 24
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "oak_sapling",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "loot_table",
+          "name": "pot:refined_ores/refined_iron",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "pot:refined_ores/refined_gold",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "pot:armor/rotten/boots",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "pot:armor/rotten/leggings",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "pot:armor/rotten/chestplate",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "pot:armor/rotten/helmet",
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 16
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "gold_nugget",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],HideFlags:32}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Shiny Deathmite's Scale", "color": "gold", "italic": false}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

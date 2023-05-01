@@ -1,0 +1,4 @@
+setblock ~ ~ ~ barrel[facing=up]{CustomName:'{"translate":"pot.ui.forging","fallback":"Forging"}'}
+summon marker ~ ~ ~ {Tags:[crafting.marker],data:{routes:[]}}
+# summon block_display ~ ~ ~ {block_state:{Name:"minecraft:crafting_table"},transformation:{scale:[1f,1f,0f],left_rotation:{axis:[1.0f,0.0f,0.0f],angle:0.0f},right_rotation:{axis:[1.0f,0.0f,0.0f],angle:0.0f},translation:[0.0f,0.0f,-0.01f]}}
+# summon block_display ~ ~ ~ {block_state:{Name:"minecraft:crafting_table"},transformation:{scale:[1f,1f,0f],left_rotation:{axis:[1.0f,0.0f,0.0f],angle:0.0f},right_rotation:{axis:[1.0f,0.0f,0.0f],angle:0.0f},translation:[0.0f,0.0f,1.01f]}}
