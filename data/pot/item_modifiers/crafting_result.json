@@ -1,0 +1,12 @@
+[{
+  "function": "set_nbt",
+  "tag": "{PotAttr:{ui:1b,crafting:{result:1b}}}"
+},
+{
+  "function": "set_lore",
+  "replace": false,
+  "lore": [
+    "",
+    {"text":"Click to take the result!","italic":false,"color":"yellow"}
+  ]
+}]

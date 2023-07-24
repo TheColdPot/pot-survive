@@ -1,0 +1,31 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"aftermath_katana\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:1,strength:15000}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Aftermath Katana", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+1","color":"red"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+15000","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

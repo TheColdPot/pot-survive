@@ -36,7 +36,8 @@ tag @e[type=!player] add combat_initiated
 
 execute as @a run attribute @s generic.attack_damage modifier add 556d191f-4e34-4581-9b08-c286cba06472 "NO REAL DMG" -0.999999 multiply
 
-execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"  ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}],"  ",[{"text":"❁ ","color":"red"},{"score":{"name": "@s","objective": "combat.strength"}}],"  ",[{"text":"⫽ ","color":"red"},{"score":{"name": "@s","objective": "combat.ferocity"}},"%"],"  ",[{"text":"⚔ ","color":"yellow"},{"score":{"name": "@s","objective": "combat.attackSpeed"}},"%"],"  ",[{"text":"☠ ","color":"blue"},{"score":{"name": "@s","objective": "combat.critChance"}},"%/",{"score":{"name": "@s","objective": "combat.critDamage"}}]]
+# execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"  ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}],"  ",[{"text":"❁ ","color":"red"},{"score":{"name": "@s","objective": "combat.strength"}}],"  ",[{"text":"⫽ ","color":"red"},{"score":{"name": "@s","objective": "combat.ferocity"}},"%"],"  ",[{"text":"⚔ ","color":"yellow"},{"score":{"name": "@s","objective": "combat.attackSpeed"}},"%"],"  ",[{"text":"☠ ","color":"blue"},{"score":{"name": "@s","objective": "combat.critChance"}},"%/",{"score":{"name": "@s","objective": "combat.critDamage"}}]]
+execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"}, "||||||||||||||||||||", " [",{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}, "]"],"   ",[{"score":{"name": "@s","objective": "combat.defense"},"color":"green"},{"text":"🛡"}],"   ",[{"text":"₪ ","color":"aqua"}, "||||||||||||||||||||", " [",{"score":{"name": "@s","objective": "magic.mana"}},"/",{"score":{"name": "@s","objective": "magic.intelligence"}}, "]"]]
 
 scoreboard players add naturalRegenTimer genericScore 1
 execute if score naturalRegenTimer genericScore matches 40 as @a run function pot:combat/health_regeneration
@@ -55,3 +56,5 @@ execute as @a[nbt=!{SelectedItem:{tag:{PotAttr:{}}}}] run function pot:combat/re
 execute as @a run scoreboard players operation @s oldSelectedSlot = @s selectedSlot
 execute as @a store result score @s selectedSlot run data get entity @s SelectedItemSlot 
 execute as @a unless score @s oldSelectedSlot = @s selectedSlot at @s run function #pot:on/gear_may_changed
+
+execute as @e[scores={combat.damageTaken=1..}] run function pot:combat/apply_taken_damage

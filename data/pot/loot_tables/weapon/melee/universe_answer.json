@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"universe_answer\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{strength:10,critDamage:1,ferocity:1}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "The Answer to the Universe", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"+10","color":"red"}],
+                [{"text":"Crit Damage: ","color":"gray","italic":false}, {"text":"+1%","color":"red"}],
+                [{"text":"Ferocity: ","color":"gray","italic":false}, {"text":"+1","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

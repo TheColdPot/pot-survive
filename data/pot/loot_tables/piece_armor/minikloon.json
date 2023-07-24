@@ -1,0 +1,42 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potGear:\"helmet\",Unbreakable:1b,HideFlags:198,PotAttr:{id:\"minikloon_head_lol\",stat:{health:-1,defense:-1,strength:-1}},SkullOwner:\"minikloon\"}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Minikloon's Head", "italic": false, "color": "red"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"-1","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"-1","color":"green"}],
+                [{"text":"Strength: ","color":"gray","italic":false}, {"text":"-1","color":"red"}]
+              ]
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                "",
+                {"text": "Piece Bonus: GOOD DESIGNER!", "color": "gold", "italic": false},
+                [{"text": "To show that you hate Minikloon.", "color": "gray", "italic": false}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 {
   "values": [
+    "cobblestone",
+    "deepslate",
+    "cobbled_deepslate",
+    "blackstone",
     "diamond_sword",
     "netherite_sword",
     "leather_helmet",
@@ -25,6 +29,8 @@
     "blaze_powder",
     "amethyst_shard",
     "paper",
-    "#pot:craftable"
+    "#pot:craftable",
+    "book",
+    "iron_nugget"
   ]
 }

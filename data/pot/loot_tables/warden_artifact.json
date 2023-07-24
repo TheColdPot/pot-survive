@@ -10,18 +10,11 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{potAttr:\"wardenArtifact\", Enchantments:[{}],HideFlags:32}"
+              "tag": "{PotAttr:{id:\"warden_artifact\"},potAttr:\"wardenArtifact\", Enchantments:[{}],HideFlags:32}"
             },
             {
               "function": "set_name",
               "name": {"text": "Warden's Artifact", "color": "dark_purple", "italic": false}
-            },
-            {
-              "function": "set_lore",
-              "lore": [
-                {"text": "They once lived friendly", "color": "dark_gray", "italic": true},
-                {"text": "with the villagers and adventurers..", "color": "dark_gray", "italic": true}
-              ]
             }
           ]
         }

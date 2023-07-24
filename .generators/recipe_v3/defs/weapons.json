@@ -1,0 +1,47 @@
+[
+  {
+    "id":"stone_hunk",
+    "pattern": [
+      {"vanilla":true,"id":"cobblestone","count":256},
+      {"vanilla":true,"id":"cobbled_deepslate","count":192},
+      {"vanilla":true,"id":"blackstone","count":128}
+    ],
+    "result": {
+      "vanilla":false,"id":"pot:weapon/melee/stone_hunk","count":1, "potid": "stone_hunk" }
+  },
+  {
+    "id": "warden_scepter",
+    "pattern": [
+      {"vanilla": false, "id":"pot:warden_artifact", "potid": "warden_artifact", "count": 48},
+      {"vanilla": true, "id": "diamond", "count": 32},
+      {"vanilla": true, "id": "amethyst_shard", "count": 64}
+    ],
+    "result": {
+      "vanilla": false, "id": "pot:weapon/melee/warden_scepter", "count": 1, "potid": "warden_scepter"
+    }
+  },
+  {
+    "id": "warden_blade",
+    "pattern": [
+      {"vanilla": false, "id":"pot:warden_heart", "potid": "warden_heart", "count": 12},
+      {"vanilla": false, "id":"pot:weapon/melee/warden_scepter", "potid": "warden_scepter", "count": 1}
+    ],
+    "result": {
+      "vanilla": false, "id": "pot:weapon/melee/warden_blade", "count": 1, "potid": "warden_blade"
+    }
+  },
+  {
+    "id": "final_answer",
+    "pattern": [
+      {"vanilla": false, "id":"pot:42_artifact", "potid": "42_artifact", "count": 42},
+      {"vanilla": false, "id":"pot:refined_ores/refined_iron", "potid": "refined_iron", "count": 128},
+      {"vanilla": false, "id":"pot:refined_ores/refined_gold", "potid": "refined_gold", "count": 128},
+      {"vanilla": false, "id":"pot:refined_ores/refined_diamond", "potid": "refined_diamond", "count": 64},
+      {"vanilla": false, "id":"pot:weapon/melee/life_answer", "potid": "life_answer", "count": 1},
+      {"vanilla": false, "id":"pot:weapon/melee/universe_answer", "potid": "universe_answer", "count": 1},
+      {"vanilla": false, "id":"pot:force_stimulator", "potid": "force_stimulator", "count": 42}    ],
+    "result": {
+      "vanilla": false, "id": "pot:weapon/melee/final_answer", "count": 1, "potid": "final_answer"
+    }
+  }
+]

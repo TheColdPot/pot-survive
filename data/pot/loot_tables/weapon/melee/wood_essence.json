@@ -1,0 +1,30 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "wooden_sword",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:6,PotAttr:{id:\"wood_essence\",gearType:\"weapon\",statSlot:[\"mainhand\"],stat:{damage:350}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Essence of Woods", "color": "gold", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"text":"Damage: ","color":"gray","italic":false}, {"text":"+350","color":"red"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "values": [
-    "pot:load"
+    "pot:load",
+    "magic:load"
   ]
 }

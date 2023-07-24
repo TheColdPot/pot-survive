@@ -1,0 +1,29 @@
+{
+  "values": [
+    "marker",
+    "armor_stand",
+    "block_display",
+    "item_display",
+    "text_display",
+    "item_frame",
+    "glow_item_frame",
+    "item",
+    "tnt",
+    "minecart",
+    "chest_minecart",
+    "hopper_minecart",
+    "furnace_minecart",
+    "spawner_minecart",
+    "command_block_minecart",
+    "#arrows",
+    "trident",
+    "experience_bottle",
+    "experience_orb",
+    "player",
+    "fireball",
+    "small_fireball",
+    "dragon_fireball",
+    "boat",
+    "fishing_bobber"
+  ]
+}

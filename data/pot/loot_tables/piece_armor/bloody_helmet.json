@@ -34,6 +34,7 @@
                 [{"text": "Halves your defense but grants ", "color": "gray", "italic": false}],
                 [{"text": "+1 ", "color": "red", "italic": false},{"text": "Strength", "color": "red", "italic": false}, {"text":" for ","color":"gray"},{"text": "every ", "color": "gray", "italic": false},{"text": "2 ", "color": "green", "italic": false},{"text": "defense.", "color": "gray", "italic": false}],
                 [{"text": "(Capped at +400 Strength!)", "color": "dark_gray", "italic": false}],
+                "",
                 [{"text": "Divides your ", "color": "red", "italic": false},{"text": "Crit Chance", "color": "blue"},{"text": " by 2!", "color": "red"}]
               ]
             }
