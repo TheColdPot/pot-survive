@@ -1,11 +1,13 @@
 data modify entity @s PortalCooldown set value 1
 
+tag @s add switch.Target
 #summon minecraft:armor_stand ^ ^-1 ^ {PortalCooldown:120,Tags:[magic.Mire,summon],ArmorItems:[{},{},{},{id:"minecraft:soul_sand",Count:1}],DisabledSlots:16191,Pose:{Head:[10.0f,10.0f,0.0f]}}
 # execute align xyz run summon minecraft:block_display ~ ~-1 ~ {PortalCooldown:120,Tags:[magic.Mire,summon],block_state:{Name:"soul_sand"},transformation:{scale:[1.0f,1.0f,1.0f],left_rotation:{axis:[0.0f,0.0f,0.0f],angle:0.0f},right_rotation:{axis:[0.0f,0.0f,0.0f],angle:0.0f},translation:[-0.5f,0.0f,-0.5f]}}
-execute positioned ^ ^-1 ^ align xyz summon block_display run function magic:list/mire/mire_place_display
-execute positioned ^1 ^-1 ^ align xyz summon block_display run function magic:list/mire/mire_place_display
-execute positioned ^-1 ^-1 ^ align xyz summon block_display run function magic:list/mire/mire_place_display
+execute positioned ^ ^ ^ align xyz summon block_display run function magic:list/mire/mire_place_display
+execute positioned ^1 ^ ^ align xyz summon block_display run function magic:list/mire/mire_place_display
+execute positioned ^-1 ^ ^ align xyz summon block_display run function magic:list/mire/mire_place_display
 
+tag @s remove switch.Target
 playsound minecraft:block.mud.fall player @a ~ ~ ~ 2 0.5 1
 # data merge entity @e[tag=summon,limit=1] {transformation:{scale:[1.0f,1.0f,1.0f],left_rotation:{axis:[0.0f,0.0f,0.0f],angle:0.0f},right_rotation:{axis:[0.0f,0.0f,0.0f],angle:0.0f},translation:[-0.5f,1.0f,-0.5f]},start_interpolation:0,interpolation_duration:10}
 

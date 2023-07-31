@@ -1,0 +1,41 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "silence_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:255,magic:{level_requirements:52,scroll:\"vampire_aura\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"translate":"magic.scroll","fallback":"魔法卷轴","color":"light_purple","italic":false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"translate":"magic.vampire_aura","fallback":"吸血光环","color":"#fa5252","italic":false}],
+                "",
+                [{"translate":"magic.base_damage","fallback":"基础伤害: %s","color":"gray","italic":false,"with":[{"text":"120","color":"red"}]}],
+                [{"translate":"magic.magic_scaling","fallback":"伤害缩放: %s","color":"gray","italic":false,"with":[{"text":"0.3","color":"red"}]}],
+                [{"translate":"magic.charge","fallback":"充能: %s / %ss","color":"gray","italic":false,"with":[{"text":"1","color":"green"},{"text":"20","color":"green"}]}],
+                [{"translate":"magic.mana_cost.use","fallback":"魔力值消耗: %s","color":"gray","italic":false,"with":[{"text":"500","color":"green"}]}],
+                "",
+                [{"translate":"magic.vampire_aura.ability.line1","fallback":"在所指的位置召唤吸血光环","color":"gray","italic":false}],
+                [{"translate":"magic.vampire_aura.ability.line2","fallback":"对其中的敌人造成伤害并治愈附近玩家","color":"gray","italic":false}],
+                "",
+                [{"translate":"magic.quality.6","fallback":"帝级魔法","color":"light_purple","bold":true,"italic":false}],
+                [{"translate":"magic.level_requirement","fallback":"⚠ 需要 %s 魔法等级！","color":"red","italic":false,"with":[{"text":"52","color":"dark_red"}]}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

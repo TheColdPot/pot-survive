@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:2434341},Unbreakable:1b,HideFlags:198,PotAttr:{id:\"apprentice_leggings\",stat:{health:25,defense:15,intelligence:25},armor:\"apprentice\"},Trim:{material:\"iron\",pattern:\"spire\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Apprentice Leggings", "italic": false, "color": "green"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+25","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+15","color":"green"}],
+                [{"text":"Intelligence: ","color":"gray","italic":false}, {"text":"+25","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "chainmail_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:198,PotAttr:{id:\"admin_deluxe_trousers\",stat:{health:9999}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Deluxe Trousers", "italic": false, "color": "dark_red"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+9999","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

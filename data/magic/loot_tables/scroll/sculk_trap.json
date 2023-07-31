@@ -1,0 +1,41 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "silence_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:255,magic:{level_requirements:13,scroll:\"mire\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"translate":"magic.scroll","fallback":"魔法卷轴","color":"light_purple","italic":false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"translate":"magic.sculk","fallback":"幽匿陷阱","color":"#18848b","italic":false}],
+                "",
+                [{"translate":"magic.base_damage","fallback":"基础伤害: %s","color":"gray","italic":false,"with":[{"text":"60","color":"red"}]}],
+                [{"translate":"magic.magic_scaling","fallback":"伤害缩放: %s","color":"gray","italic":false,"with":[{"text":"0.3","color":"red"}]}],
+                [{"translate":"magic.charge","fallback":"充能: %s / %ss","color":"gray","italic":false,"with":[{"text":"5","color":"green"},{"text":"10","color":"green"}]}],
+                [{"translate":"magic.mana_cost.use","fallback":"魔力值消耗: %s","color":"gray","italic":false,"with":[{"text":"300","color":"green"}]}],
+                "",
+                [{"translate":"magic.sculk_trap.ability.line1","fallback":"在你的前方布下幽匿陷阱","color":"gray","italic":false}],
+                [{"translate":"magic.sctulk_trap.ability.line2","fallback":"敌人走过时造成大量伤害","color":"gray","italic":false}],
+                "",
+                [{"translate":"magic.quality.5","fallback":"王级魔法","color":"gold","bold":true,"italic":false}],
+                [{"translate":"magic.level_requirement","fallback":"⚠ 需要 %s 魔法等级！","color":"red","italic":false,"with":[{"text":"32","color":"dark_red"}]}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

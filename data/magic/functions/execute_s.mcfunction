@@ -7,4 +7,4 @@ execute if score @s staff.Key1 matches 1.. if score @s staff.Key2 matches 1.. if
 execute if score @s staff.Key1 matches 1.. if score @s staff.Key2 matches 1.. unless score @s staff.Key3 matches 1.. run function magic:marks/key2
 execute if score @s staff.Key1 matches 1.. unless score @s staff.Key2 matches 1.. unless score @s staff.Key3 matches 1.. run function magic:marks/key1
 
-scoreboard players set @s staff.shiftClick -3
+# scoreboard players set @s staff.sneakTime -3

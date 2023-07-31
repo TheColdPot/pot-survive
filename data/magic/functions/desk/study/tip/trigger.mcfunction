@@ -1,0 +1,2 @@
+execute if data entity @s data._unmodified[{Slot:4b}].tag.magic.scroll run function magic:desk/study/tip/accept
+execute unless data entity @s data._unmodified[{Slot:4b}].tag.magic.scroll run function magic:desk/study/tip/error

@@ -22,6 +22,9 @@ scoreboard objectives add uuid2 dummy "UUID[2]"
 scoreboard objectives add uuid3 dummy "UUID[3]"
 scoreboard objectives add combat.damageTaken dummy "Damage taken in current tick"
 scoreboard objectives add combat._finalDmg dummy "Final Damage (Temp)"
+scoreboard objectives add combat.ranged dummy "Final Ranged Damage"
+scoreboard objectives add combat.baseRanged dummy "Final Ranged Damage"
+scoreboard objectives add combat._rangedHurtTime dummy "Ranged Damage Hurt Time"
 scoreboard objectives add combat.melee dummy "Final Melee Damage"
 scoreboard objectives add combat.baseMelee dummy "Final Melee Damage"
 scoreboard objectives add combat.damage dummy "Damage"
@@ -51,7 +54,9 @@ scoreboard objectives add combat._ferocity dummy "Ferocity Temp"
 scoreboard objectives add combat._defense dummy "Defense + 100"
 scoreboard objectives setdisplay belowName combat.health
 scoreboard objectives add constant dummy "Constant"
+scoreboard players set -100 constant -100
 scoreboard players set 100 constant 100
+scoreboard players set 200 constant 200
 scoreboard players set 500 constant 500
 scoreboard players set 400 constant 400
 scoreboard players set 2 constant 2
@@ -59,7 +64,11 @@ scoreboard players set 3 constant 3
 scoreboard players set 1000000000 constant 1000000000
 scoreboard players set 5 constant 5
 scoreboard players set 0 constant 0
-scoreboard players set @a combat.maxHealth 100
+scoreboard players set 1 constant 1
+scoreboard players set 10 constant 10
+scoreboard players set 20 constant 20
+scoreboard players set 50 constant 50
+# scoreboard players set @a combat.maxHealth 100
 scoreboard objectives add combat.attackSpeed dummy "Attack Speed"
 scoreboard objectives add combat._cooldown dummy "Attack Cooldown"
 scoreboard objectives add oldSelectedSlot dummy "Old selected slot"
@@ -74,11 +83,13 @@ scoreboard objectives add marker_marking dummy "Marker: marking"
 
 bossbar add pot:final_boss ""
 
-team add proximaRelated "Promixa Related"
-team modify proximaRelated collisionRule pushOtherTeams
+# team add proximaRelated "Promixa Related"
+# team modify proximaRelated collisionRule pushOtherTeams
 
 gamerule commandBlockOutput false
 gamerule showDeathMessages false
-tellraw @a ["\n", {"text":"POTTY SURVIVE","color":"yellow","bold":true}, {"text":" v1-alpha","color":"gold"},"\n\n",{"text":"由 TheColdPot and SaKuraYeager 开发","color":"gray"}, "\n",{"text":"由 Arctic Pot Team 及其他志愿者测试","color":"gray"},"\n\n",{"text":"为了保证您的体验，命令方块输出已自动关闭","color":"dark_gray","italic":true},"\n"]
+tellraw @a ["\n", {"text":"POTTY SURVIVE","color":"light_purple","bold":true}, {"text":" v2-INTERNAL","color":"dark_purple"},"\n\n",{"text":"CREATORS:","color":"gold","bold":true},{"text":" TheColdPot and SaKuraYeager","color":"yellow"},"\n\n",{"text":"为了保证您的体验，命令方块输出已自动关闭","color":"dark_gray","italic":true},"\n",{"text":"可是……v1到哪里去了?","color":"dark_gray","italic":true}]
 
 data merge storage pot:main {ferocity:[]}
+
+schedule function pot:scheduled_tasks/regen_health 2s replace

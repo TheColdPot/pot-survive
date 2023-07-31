@@ -1,4 +1,4 @@
-execute facing entity @e[type=!#magic:decoration,tag=!magic.Shooter,limit=1,sort=nearest,distance=..8] feet run tp @s ~ ~ ~ ~ ~
+execute facing entity @e[type=!#magic:decoration,tag=!magic.Shooter,limit=1,sort=nearest,distance=..3] feet run tp @s ~ ~ ~ ~ ~
 
 
 loot replace entity @s armor.feet loot magic:_random_provider/rotation_x

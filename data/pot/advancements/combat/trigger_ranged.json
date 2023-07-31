@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              { "expected": false, "id": "pot:out_of_world" }
+            ],
+            "direct_entity": {
+              "type": "#arrows"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "crying_obsidian"
+        },
+        
+        {
+          "type": "item",
+          "name": "blue_terracotta"
+        },
+        {
+          "type": "item",
+          "name": "purple_stained_glass"
+        },
+        {
+          "type": "item",
+          "name": "amethyst_block"
+        }
+      ]
+    }
+  ]
+}

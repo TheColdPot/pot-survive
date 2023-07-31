@@ -1,0 +1,21 @@
+{
+  "magic.quality.1": "初级魔法",
+  "magic.quality.2": "中级魔法",
+  "magic.quality.3": "上级魔法",
+  "magic.quality.4": "圣级魔法",
+  "magic.quality.5": "王级魔法",
+  "magic.quality.6": "帝级魔法",
+  "magic.quality.7": "神级魔法",
+  "magic.scroll": "魔法卷轴",
+  "magic.base_damage": "基础伤害: %s",
+  "magic.cast": "蓄力: %s x %ss",
+  "magic.magic_scaling": "伤害缩放: %s",
+  "magic.level_requirement": "⚠ 需要魔法等级 %s!",
+  "magic.mana_cost.use": "魔法值消耗: %s",
+  "magic.mana_cost.cast": "蓄力魔法值消耗: %s",
+  "magic.waterball": "水球",
+  "magic.ice_pile": "冰堆",
+  "magic.mire": "灵魂沼泽",
+  "magic.mire.ability.line1": "在你的前方召唤灵魂泥潭",
+  "magic.mire.ability.line2": "对陷入的敌人造成伤害"
+}

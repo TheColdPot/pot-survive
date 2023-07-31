@@ -5,7 +5,12 @@
       "conditions": {
         "damage": {
           "type": {
-            "is_projectile": false
+            "tags": [
+              { "expected": false, "id": "pot:out_of_world" }
+            ],
+            "direct_entity": {
+              "type": "player"
+            }
           }
         }
       }

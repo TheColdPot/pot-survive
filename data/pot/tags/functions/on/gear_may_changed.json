@@ -1,5 +1,6 @@
 {
   "values": [
-    "pot:combat/calculate_combat_stat"
+    "pot:combat/calculate_combat_stat",
+    "pot:calculate_magic_stat"
   ]
 }

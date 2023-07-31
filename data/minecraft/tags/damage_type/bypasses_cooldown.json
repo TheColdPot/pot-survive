@@ -4,6 +4,7 @@
      "minecraft:mob_attack",
      "minecraft:arrow",
      "minecraft:player_attack",
-     "minecraft:magic"
+     "minecraft:magic",
+     "minecraft:generic"
     ]
   }

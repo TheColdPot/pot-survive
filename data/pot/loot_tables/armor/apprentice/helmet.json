@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_helmet",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:7500402},Unbreakable:1b,HideFlags:198,PotAttr:{id:\"apprentice_helmet\",stat:{health:20,defense:10,intelligence:15},armor:\"apprentice\"},Trim:{material:\"netherite\",pattern:\"shaper\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Apprentice Hat", "italic": false, "color": "green"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+20","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+10","color":"green"}],
+                [{"text":"Intelligence: ","color":"gray","italic":false}, {"text":"+15","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

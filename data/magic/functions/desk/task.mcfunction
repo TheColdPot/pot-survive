@@ -1,0 +1,1 @@
+clear @a #magic:desk_item{magic:{desk:1b}}

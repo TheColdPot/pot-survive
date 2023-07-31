@@ -6,7 +6,7 @@ execute unless score @s[tag=magic.Casting] magic.Phase matches 101.. run scorebo
 
 execute if entity @s[tag=magic.Casting,scores={staff.rightClick=1..}] run scoreboard players reset @s magic.Cast
 
-execute if score @s[tag=magic.Casting] magic.Cast matches 5.. run function magic:list/fireball/summon
+execute if score @s[tag=magic.Casting] magic.Cast matches 6.. run function magic:list/fireball/summon
 
 execute if score @s[tag=magic.Casting] magic.Phase matches 1..20 run title @s subtitle [{"text":"● ● ● ● ●","color":"dark_gray"}]
 execute if score @s[tag=magic.Casting] magic.Phase matches 21..40 run title @s subtitle [{"text":"● ","color":"gray"},{"text":"● ● ● ●","color":"dark_gray"}]

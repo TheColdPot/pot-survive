@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_boots",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:2434341},Unbreakable:1b,HideFlags:198,PotAttr:{id:\"apprentice_boots\",stat:{health:15,defense:5,intelligence:10},armor:\"apprentice\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Apprentice Boots", "italic": false, "color": "green"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+15","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+5","color":"green"}],
+                [{"text":"Intelligence: ","color":"gray","italic":false}, {"text":"+10","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

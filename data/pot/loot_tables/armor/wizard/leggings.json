@@ -1,0 +1,33 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{color:12220849},Unbreakable:1b,HideFlags:198,PotAttr:{id:\"wizard_leggings\",stat:{health:35,defense:40,intelligence:60},armor:\"wizard\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Wizard Leggings", "italic": false, "color": "blue"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+35","color":"green"}],
+                [{"text":"Defense: ","color":"gray","italic":false}, {"text":"+40","color":"green"}],
+                [{"text":"Intelligence: ","color":"gray","italic":false}, {"text":"+60","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "chainmail_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{potGear:\"helmet\",Unbreakable:1b,HideFlags:198,PotAttr:{id:\"admin_smarty_underwear\",stat:{intelligence:4103,health:4231}}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "Cutie Panty", "italic": false, "color": "dark_red"}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Health: ","color":"gray","italic":false}, {"text":"+4231","color":"green"}],
+                [{"text":"Intelligence: ","color":"gray","italic":false}, {"text":"+4103","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

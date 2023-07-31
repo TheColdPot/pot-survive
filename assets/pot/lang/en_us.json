@@ -1,0 +1,21 @@
+{  
+  "magic.quality.1": "INFERIOR MAGIC",
+  "magic.quality.2": "JUNIOR MAGIC",
+  "magic.quality.3": "SENIOR MAGIC",
+  "magic.quality.4": "SUPERIOR MAGIC",
+  "magic.quality.5": "IMPERIAL MAGIC",
+  "magic.quality.6": "MIRACULOUS MAGIC",
+  "magic.quality.7": "DIVINE MAGIC",
+  "magic.scroll": "Magic Scroll",
+  "magic.base_damage": "Base Damage: %s",
+  "magic.cast": "Cast: %s x %ss",
+  "magic.magic_scaling": "Magic Scaling: %s",
+  "magic.level_requirement": "⚠ Requires Magic Level %s!",
+  "magic.mana_cost.use": "Mana Cost: %s",
+  "magic.mana_cost.cast": "Mana Cost on Cast: %s",
+  "magic.waterball": "The Orb of Aqua",
+  "magic.ice_pile": "Ice Pile",
+  "magic.mire": "Soul Mire",
+  "magic.mire.ability.line1": "Spawn a soul mire ahead of you, dealing",
+  "magic.mire.ability.line2": "damage to enemies into it."
+}

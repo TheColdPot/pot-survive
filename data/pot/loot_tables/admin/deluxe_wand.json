@@ -1,0 +1,31 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{PotAttr:{id:\"starter_wand\",statSlot:[\"mainhand\"],stat:{intelligence:55555}},magicStaff:1b, Enchantments:[{}]}"
+            },
+            {
+              "function": "set_name",
+              "name": {"text": "DELUXE Wand", "color": "dark_red", "italic": false}
+            },
+            {
+              "function": "set_lore",
+              "replace": false,
+              "lore": [
+                [{"text":"Intelligence: ","color":"gray","italic":false}, {"text":"+55555","color":"green"}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

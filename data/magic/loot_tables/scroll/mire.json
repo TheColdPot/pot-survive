@@ -1,0 +1,40 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "silence_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Unbreakable:1b,HideFlags:255,magic:{level_requirements:13,scroll:\"mire\"}}"
+            },
+            {
+              "function": "set_name",
+              "name": {"translate":"magic.scroll","fallback":"魔法卷轴","color":"light_purple","italic":false}
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [{"translate":"magic.mire","fallback":"灵魂沼泽","color":"#733C03","italic":false}],
+                "",
+                [{"translate":"magic.base_damage","fallback":"基础伤害: %s","color":"gray","italic":false,"with":[{"text":"10","color":"red"}]}],
+                [{"translate":"magic.magic_scaling","fallback":"伤害缩放: %s","color":"gray","italic":false,"with":[{"text":"0.2","color":"red"}]}],
+                [{"translate":"magic.mana_cost.use","fallback":"魔力值消耗: %s","color":"gray","italic":false,"with":[{"text":"150","color":"green"}]}],
+                "",
+                [{"translate":"magic.mire.ability.line1","fallback":"在你的前方召唤灵魂泥潭","color":"gray","italic":false}],
+                [{"translate":"magic.mire.ability.line2","fallback":"对陷入的敌人造成伤害","color":"gray","italic":false}],
+                "",
+                [{"translate":"magic.quality.3","fallback":"上级魔法","color":"blue","bold":true,"italic":false}],
+                [{"translate":"magic.level_requirement","fallback":"⚠ 需要 %s 魔法等级！","color":"red","italic":false,"with":[{"text":"13","color":"dark_red"}]}]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

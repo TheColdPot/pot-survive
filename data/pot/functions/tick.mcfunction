@@ -1,3 +1,4 @@
+scoreboard players add time genericScore 1
 # scoreboard players add @e[tag=transformWolf] genericScore 1
 # execute as @e[tag=transformWolf,scores={genericScore=100..}] at @s run function pot:tame/remove
 
@@ -37,11 +38,11 @@ tag @e[type=!player] add combat_initiated
 execute as @a run attribute @s generic.attack_damage modifier add 556d191f-4e34-4581-9b08-c286cba06472 "NO REAL DMG" -0.999999 multiply
 
 # execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"},{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}],"  ",[{"text":"🛡 ","color":"green"},{"score":{"name": "@s","objective": "combat.defense"}}],"  ",[{"text":"❁ ","color":"red"},{"score":{"name": "@s","objective": "combat.strength"}}],"  ",[{"text":"⫽ ","color":"red"},{"score":{"name": "@s","objective": "combat.ferocity"}},"%"],"  ",[{"text":"⚔ ","color":"yellow"},{"score":{"name": "@s","objective": "combat.attackSpeed"}},"%"],"  ",[{"text":"☠ ","color":"blue"},{"score":{"name": "@s","objective": "combat.critChance"}},"%/",{"score":{"name": "@s","objective": "combat.critDamage"}}]]
-execute as @a run title @s actionbar [[{"text":"❤ ","color":"red"}, "||||||||||||||||||||", " [",{"score":{"name": "@s","objective": "combat.health"}},"/",{"score":{"name": "@s","objective": "combat.maxHealth"}}, "]"],"   ",[{"score":{"name": "@s","objective": "combat.defense"},"color":"green"},{"text":"🛡"}],"   ",[{"text":"₪ ","color":"aqua"}, "||||||||||||||||||||", " [",{"score":{"name": "@s","objective": "magic.mana"}},"/",{"score":{"name": "@s","objective": "magic.intelligence"}}, "]"]]
+execute as @a at @s summon marker run function pot:actionbar/display
 
-scoreboard players add naturalRegenTimer genericScore 1
-execute if score naturalRegenTimer genericScore matches 40 as @a run function pot:combat/health_regeneration
-execute if score naturalRegenTimer genericScore matches 40 run scoreboard players set naturalRegenTimer genericScore 0
+scoreboard players add potionCheckTimer genericScore 1
+execute if score potionCheckTimer genericScore matches 20 as @a run function pot:combat/effects/check
+execute if score potionCheckTimer genericScore matches 20 run scoreboard players set potionCheckTimer genericScore 0
 
 # scoreboard players add updateHealthTimer genericScore 1
 # execute if score updateHealthTimer genericScore matches 20 run execute as @a run function pot:combat/update_max_health
@@ -58,3 +59,6 @@ execute as @a store result score @s selectedSlot run data get entity @s Selected
 execute as @a unless score @s oldSelectedSlot = @s selectedSlot at @s run function #pot:on/gear_may_changed
 
 execute as @e[scores={combat.damageTaken=1..}] run function pot:combat/apply_taken_damage
+execute as @e[type=#arrows,nbt={HasBeenShot:0b}] at @s run function pot:combat/ranged/init_arrow
+execute as @e[type=#arrows,nbt={life:1s}] at @s run function pot:combat/ranged/destroy_arrow
+execute as @e[type=marker,tag=combat.arrowMarker] at @s run function pot:combat/ranged/arrow_marker

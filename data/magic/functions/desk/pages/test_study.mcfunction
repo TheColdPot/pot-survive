@@ -1,0 +1,1 @@
+execute if data block ~ ~ ~ Items[{Slot:4b}] run function magic:desk/study/tip/trigger

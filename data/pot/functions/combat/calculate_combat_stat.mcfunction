@@ -10,6 +10,7 @@ execute store result score @s combat._armorStat run data get entity @s Inventory
 scoreboard players operation @s combat.maxHealth += @s combat._armorStat
 execute store result score @s combat._armorStat run data get entity @s Inventory[{Slot:100b}].tag.PotAttr.stat.health
 scoreboard players operation @s combat.maxHealth += @s combat._armorStat
+scoreboard players operation @s combat.maxHealth > 50 constant
 scoreboard players operation @s combat.health < @s combat.maxHealth
 
 
